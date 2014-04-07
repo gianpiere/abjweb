@@ -1,0 +1,249 @@
+.access{
+	overflow: auto;
+	display: block;
+}
+
+.bannerTop{
+	max-height: 230px;
+	height: auto;
+	width: 100%;
+	max-width: 960px;
+	overflow: auto;
+	margin: 0 auto;
+	background: #579aca;
+}
+
+.optionfocushome{min-height: 340px;}
+
+.socialplugins{
+	height: 24px;
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.inicialheader{
+	border-bottom: 2px solid #272822;
+	width: 100%;
+	background: #454545;
+	color: white;
+}
+
+.galeria{
+	width: 435px;
+	max-width: calc((100% / 2) - 9.375%); /* 435 - 90 - 435 == 960 */
+	background: green;
+	height: 450px;
+}
+
+.multimedia{
+	width: 600px;
+	max-width: calc(((100% / 2) + 9.375%) - 20px);
+	background: green;
+	height: 450px;
+}
+
+.menuhome{height: 40px; float: right; width: 724px; display: inline-block;}
+.menuhome a{
+	text-decoration: none; 
+	color: white; 
+	height: 20px; 
+	min-width: 20px; 
+	padding: 8px 10px 10px 10px;
+	float: left;
+	border-bottom: 4px solid white;
+}
+
+.menuhome a:not(.lnkfocus):hover{background: #afdd90;}
+.menuhome a.lnkfocus{
+	background: #83ba51;
+	border-bottom: 4px solid orange;
+}
+.menuhome a.lnkfocus:focus{background: #83ba51;}
+
+
+.copyright{
+	display: block;
+	width: 100%;
+}
+
+footer #sectionfooter{
+	padding-top: 2px;
+}
+
+.logohome{
+	width: auto;
+	display: inline-block;
+	overflow: auto;
+}
+
+.contentfotogaleria{
+	width: 100%;
+	max-width: 100%;
+	background: gray;
+	height: 50%;
+	display: block;
+}
+
+.contentfotogaleria img{
+	max-height: 100%;
+}
+
+.circlebutton{
+	background: orange;
+	padding: 10px;
+}
+
+.negative10top{
+	margin-top: -25px;
+	position: absolute;
+}
+
+.circlebutton.negative10top.reducemidle{
+	margin-left:-25px;
+}
+
+.devocional{
+	height: 60px;
+	display: block;
+	overflow: auto;
+	width: 742px;
+}
+
+.msg_dev{
+	overflow: auto;
+	display: block;
+}
+
+.msg_dev .cunha{
+	width: 18px;
+	height: 40px;
+	display: inline-block;
+	float: left;
+}
+
+.msg_dev .mensaje{
+	background: #ffe168;
+	color: #c59f13;
+	display: inline-block;
+	width: 716px;
+	height: 34px;
+	padding: 2px 4px 4px 4px;
+}
+
+.useraccess{
+	float: right;
+	width: 80px;
+	height: 23px;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	background: gold;
+	border-right: 5px solid green;
+	margin-top: 2px;
+}
+
+/* laterales rasgados */
+.rasgadoL{
+	float: left;
+	width: 20px;
+	height: 981px;
+}
+
+.rasgadoR{
+	float: left;
+	width: 20px;
+	height: 981px;
+}
+
+.allcontent{
+	background: #FFFFFF;
+}
+
+.lnkfacebook{
+	
+	width: 70px;
+	height: 26px;
+	margin-left: 0px;
+}
+
+.rutabiblica{
+	float: right;
+	color: violet;
+	display: block;
+	text-align: right;
+}
+
+.msgtop{
+	min-height: 10px;
+	display: block;
+	width: 100%;
+}
+
+.img_responsive{
+	max-width: 100%;
+	height: auto;
+}
+
+
+/** slider **/
+
+.sliderpanel{
+	background: orange;
+	position: relative;
+}
+
+.sliderpanel .controls{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 1;
+}
+.Texto{
+	display: block;	position: relative;
+}
+
+.sld_action{
+	height: 40px;
+	min-width: 70px;
+	background: green;
+	padding: 0px 25px 0px 25px;
+	position: absolute;
+	bottom: 20px;
+	right: 15px;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+}
+a{text-decoration: none; color: inherit;}
+
+.slideposition{
+	width: 500px;
+	height: 4px;
+	position: absolute;
+	bottom: 18px;
+	left: 10px;
+}
+
+.slideposition i{
+	min-width: 10px;
+	min-height: 4px;
+	float: left;
+	margin-right: 7px;
+	cursor: pointer;
+}
+
+.slideposition i:hover{
+	height: 8px;
+}
+
+.slideposition i.nofocus{
+	background: gold;
+}
+
+.slideposition i.onfocus{
+	background: orange;
+	width: 20px;
+}

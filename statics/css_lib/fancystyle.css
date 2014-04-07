@@ -1,0 +1,9 @@
+#fancy_wrap{
+	background: url(http://localhost/abjweb/statics/img/fondo/bg_fancy_black.png);
+	position: absolute;
+	z-index: 7;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}

@@ -1,0 +1,1184 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"a",
+				"array	$… = array (…)"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"fancy",
+				"fancy_wrap"
+			],
+			[
+				"JS",
+				"JS_LIB"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"borde",
+				"border-style"
+			],
+			[
+				"bord",
+				"border"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"fa",
+				"fadeOut"
+			],
+			[
+				"fami",
+				"familias"
+			],
+			[
+				"fade",
+				"fadeOut"
+			],
+			[
+				"fon",
+				"font-style"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"border",
+				"border-top"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"Gerente",
+				"GerenteCorporativo"
+			],
+			[
+				"num",
+				"number_format"
+			],
+			[
+				"producto",
+				"Productois"
+			],
+			[
+				"pro",
+				"producto"
+			],
+			[
+				"Pro",
+				"Productois"
+			],
+			[
+				"html",
+				"html_final"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"su",
+				"subresult"
+			],
+			[
+				"sublim",
+				"sublime_plugin"
+			],
+			[
+				"sel",
+				"self"
+			],
+			[
+				"date_",
+				"date_format"
+			],
+			[
+				"ri",
+				"right"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"zona",
+				"zonaverticaltext"
+			],
+			[
+				"proyeccion",
+				"proyeccionesdezona"
+			],
+			[
+				"Param",
+				"Params"
+			],
+			[
+				"lbl",
+				"lbl_Html_Compact"
+			],
+			[
+				"is_a",
+				"is_array"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"li",
+				"list-style"
+			],
+			[
+				"json_e",
+				"json_encode"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "application/controllers/Login.php",
+			"settings":
+			{
+				"buffer_size": 8495,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/User/mysqlexecutesis.sublime-build",
+	"command_palette":
+	{
+		"height": 81.0,
+		"selected_items":
+		[
+			[
+				"javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"comit",
+				"Git: Commit"
+			],
+			[
+				"comi",
+				"Git: Commit"
+			],
+			[
+				"git",
+				"Git: Gui"
+			],
+			[
+				"pu",
+				"Git: Push"
+			],
+			[
+				"pull",
+				"Git: Pull"
+			],
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"pus",
+				"Git: Push Current Branch"
+			],
+			[
+				"git br",
+				"Git: New Branch"
+			],
+			[
+				"git ",
+				"Git: Commit"
+			],
+			[
+				"git come",
+				"Set Syntax: Git Commit Message"
+			],
+			[
+				"com",
+				"Git: Commit"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remoc",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"paca",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"control",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Disable Package"
+			],
+			[
+				"package ",
+				"Package Control: Disable Package"
+			],
+			[
+				"pic",
+				"Color picker"
+			],
+			[
+				"mar",
+				"Markdown Preview: Open Markdown Cheat sheet"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"packages",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 114.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"view.run_command('OpenBrowserCommand')",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
+			"console.clear()",
+			"console.close()",
+			"console",
+			"clear",
+			"clear()",
+			"cls",
+			"console.clear",
+			"console.clear()",
+			"clear",
+			"clear()",
+			"view.run_command('SelectionPlugin')",
+			"view.run_command('SelectionPluginCommand')",
+			"view.run_command('selection_plugin')",
+			"view.run_command('OpenBrowserCommand')",
+			"view.run_command('runinbrowsercommand')",
+			"view.run_command('RunInBrowserCommand')",
+			"view.run_command('msgopen')",
+			"view.run_command('ExampleCommand')",
+			"view.run_command('examplecommand')",
+			"view.run_command('msgopen')",
+			"view.run_command('ExampleCommand')",
+			"view.begin_edit()",
+			"window.run_command(\"message_dialog\", {\"To\": \"Be\", \"Or\": \"Not\", \"Two\": \"Bees\"})",
+			"window.run_command(\"echo\", {\"To\": \"Be\", \"Or\": \"Not\", \"Two\": \"Bees\"})",
+			"view.run_command()",
+			"import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print 'Please restart Sublime Text to finish installation'",
+			"view.run_command('msgopen.py')",
+			"view.run_command(msgopen.py)",
+			"import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print 'Please restart Sublime Text to finish installation'",
+			"s",
+			"import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print 'Please restart Sublime Text to finish installation'",
+			"import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print 'Please restart Sublime Text to finish installation' ",
+			"view.run_command(\"msgopen\");",
+			"view.run_command(\"msgopen\")",
+			"window.run_command ('show_panel', {'Panel': 'find_in_files'})",
+			"message_dialog(\"hola\")",
+			"window.run_command ('show_panel', {'Panel': 'find_in_files'})",
+			"a",
+			"window.run_command ('show_panel', {'Panel': 'find_in_files'})",
+			"view.run_command(\"enumerateasc\")"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/xampp/htdocs/abjweb/application/controllers/LoginUserAccess.php",
+		"/C/xampp/htdocs/abjweb/application/libraries/lbl_Html_Compact.php",
+		"/C/Users/Gianpiere/Documents/cipia web kevin/abjweb/application/controllers/Home.php",
+		"/C/xampp/htdocs/abjweb/application/core/EnviarEmail.php",
+		"/C/xampp/htdocs/abjweb/application/core/EnvioEmail.php",
+		"/C/xampp/htdocs/abjweb/application/libraries/EnvioEmail.php",
+		"/C/xampp/htdocs/abjweb/PHPMailer/class.phpmailer.php",
+		"/G/Documents/Descargas/copia web wwabj kevin 2014 1/application/controllers/Registro.php",
+		"/C/xampp/htdocs/abjweb/system/helpers/html_helper.php",
+		"/C/xampp/htdocs/abjweb/.htaccess",
+		"/C/xampp/htdocs/abjweb/application/controllers/Home.php",
+		"/C/xampp/htdocs/abjweb/application/views/template/theme/header.php",
+		"/C/xampp/htdocs/abjweb/application/views/template/fancy/header.php",
+		"/D/DISCO D (datos)/mi usb AAAAAAAAAAa/B/Developer/Proyecto Page/page/application/controllers/Home.php",
+		"/D/DISCO D (datos)/mi usb AAAAAAAAAAa/B/Developer/Proyecto Page/page/application/controllers/Galeria.php",
+		"/C/Users/Gianpiere/Desktop/Diseño GALAXY ACE/Compilacion_Daylin/META-INF/com/google/android/updater-script",
+		"/D/DISCO D (datos)/copia xammp/developer_/application/helpers/GangperClass_helper.php",
+		"/D/DISCO D (datos)/copia xammp/developer_/application/libraries/UpladFotosGangper.php",
+		"/D/DISCO D (datos)/copia xammp/hunter/application/controllers/Galeria.php",
+		"/D/DISCO D (datos)/copia xammp/hunter/application/libraries/UpladFotosGangper.php",
+		"/D/DISCO D (datos)/copia xammp/gangper/system/core/DBFunctions.php",
+		"/D/DISCO D (datos)/copia xammp/gangper/system/core/FuncionesGenerales.php",
+		"/D/DISCO D (datos)/copia xammp/gangper/system/libraries/Upload.php",
+		"/D/DISCO D (datos)/copia xammp/developer/application/libraries/UpladFotosGangper.php",
+		"/D/Escritorio/HtDOCS/application/core/MY_Controller.php",
+		"/D/Escritorio/MI USB RECICLER/programs/page2/application/controllers/Galeria.php",
+		"/D/Escritorio/MI USB RECICLER/programs/page2/application/libraries/UpladFotosGangper.php",
+		"/D/Escritorio/Gianpiere/page/application/libraries/Uploadify_max.php",
+		"/D/Escritorio/Gianpiere/page/application/libraries/MY_sPlantillas.php",
+		"/D/Escritorio/Gianpiere/page/application/libraries/UpladFotosGangper.php",
+		"/D/Escritorio/Gianpiere/page/application/helpers/GangperClass_helper.php",
+		"/C/xampp/htdocs/abjweb/application/controllers/EmailSend.php",
+		"/C/xampp/htdocs/abjweb/statics/js_lib/fancyscript.js",
+		"/G/Developer/ApacheServer/htdocs/bk31122013_abjlosolivos/application/controllers/Registro.php",
+		"/C/xampp/htdocs/abjweb/statics/css/login.css",
+		"/C/xampp/htdocs/abjweb/application/language/es/spanish_lang.php",
+		"/C/xampp/htdocs/abjweb/application/views/page/login/lg/FormRegistrar.php",
+		"/C/xampp/htdocs/abjweb/application/models/m_UserLogin.php",
+		"/C/xampp/htdocs/abjweb/application/libraries/my_phpmailer.php",
+		"/C/xampp/htdocs/abjweb/statics/js_lib/login.js",
+		"/C/xampp/htdocs/abjweb/application/controllers/Login.php",
+		"/C/xampp/htdocs/abjweb/system/language/english/date_lang.php",
+		"/C/xampp/htdocs/abjweb/system/language/english/db_lang.php",
+		"/C/xampp/htdocs/abjweb/application/models/m_Devocional.php",
+		"/C/xampp/htdocs/abjweb/application/config/routes.php",
+		"/C/xampp/htdocs/abjweb/application/views/template/fancy/footer.php",
+		"/C/xampp/htdocs/abjweb/application/views/page/login/lg/css/lg.css",
+		"/C/xampp/htdocs/abjweb/application/logs/index.html",
+		"/C/xampp/htdocs/abjweb/application/views/fancybox/f_login_v.php",
+		"/C/xampp/htdocs/abjweb/application/hooks/loginHelper.php",
+		"/C/xampp/htdocs/abjweb/application/core/MY_Controller.php",
+		"/C/xampp/htdocs/abjweb/application/controllers/Fotos.php",
+		"/C/xampp/htdocs/abjweb/application/controllers/Cursos.php",
+		"/C/xampp/htdocs/abjweb/application/controllers/Contactenos.php",
+		"/C/xampp/htdocs/abjweb/application/controllers/Actividades.php",
+		"/C/xampp/htdocs/abjweb/application/controllers/Mas.php",
+		"/C/xampp/htdocs/abjweb/application/controllers/Nosotros.php",
+		"/C/xampp/htdocs/abjweb/application/views/template/fancy/template.php",
+		"/C/xampp/htdocs/abjweb/statics/css/Thematica.css",
+		"/C/xampp/htdocs/abjweb/application/core/GL_Functions.php",
+		"/C/xampp/htdocs/abjweb/application/views/template/theme/footer.php",
+		"/C/xampp/htdocs/abjweb/application/config/hooks.php",
+		"/C/xampp/htdocs/abjweb/application/views/template/theme/template.php",
+		"/C/xampp/htdocs/abjweb/statics/css/normalstyle.css",
+		"/C/xampp/htdocs/abjweb/application/config/config.php",
+		"/C/xampp/htdocs/abjweb/statics/css/BackgroundsTheme.css",
+		"/C/xampp/htdocs/abjweb/system/language/english/calendar_lang.php",
+		"/C/xampp/htdocs/abjweb/system/libraries/Javascript.php",
+		"/C/xampp/htdocs/abjweb/system/libraries/javascript/Jquery.php",
+		"/C/xampp/htdocs/abjweb/statics/js_lib/easing/jquery.easing.1.3.js",
+		"/C/xampp/htdocs/abjweb/statics/js_lib/bootstrap/bootstrap-select.min.js",
+		"/C/xampp/htdocs/abjweb/statics/js_lib/bootstrap/bootstrap-select.js",
+		"/C/xampp/htdocs/abjweb/application/views/page/nosotros/ns/js/ns.js",
+		"/C/xampp/htdocs/abjweb/application/views/page/mas/ms/js/ms.js",
+		"/C/xampp/htdocs/abjweb/application/views/page/Home/hm/js/hm.js",
+		"/C/xampp/htdocs/abjweb/application/views/page/fotos/ft/js/ft.js",
+		"/C/xampp/htdocs/abjweb/application/views/page/cursos/cs/js/cs.js",
+		"/C/xampp/htdocs/abjweb/application/views/page/contactenos/ct/js/ct.js",
+		"/C/xampp/htdocs/abjweb/application/views/page/actividades/ac/js/ac.js",
+		"/C/xampp/htdocs/abjweb/statics/css_lib/fancystyle.css",
+		"/C/xampp/htdocs/abjweb/system/helpers/date_helper.php",
+		"/C/xampp/htdocs/abjweb/application/views/page/login/FormRegistrar.php",
+		"/C/xampp/htdocs/abjweb/system/database/drivers/oci8/oci8_utility.php",
+		"/C/xampp/htdocs/abjweb/application/views/page/mas/ms/css/ms.css",
+		"/C/xampp/htdocs/abjweb/application/views/page/Home/hm/css/hm.css",
+		"/C/xampp/htdocs/abjweb/application/views/page/Home/hm/hm.php",
+		"/C/xampp/htdocs/abjweb/application/views/page/actividades/ac/css/ac.css",
+		"/C/xampp/htdocs/abjweb/application/views/page/contactenos/ct/css/ct.css",
+		"/C/xampp/htdocs/abjweb/application/views/page/cursos/cs/css/cs.css",
+		"/C/xampp/htdocs/abjweb/application/views/page/fotos/ft/css/ft.css",
+		"/C/xampp/htdocs/abjweb/application/views/page/cursos/cs/cs.php",
+		"/C/xampp/htdocs/abjweb/application/views/page/contactenos/ct/ct.php",
+		"/C/xampp/htdocs/abjweb/application/views/page/actividades/ac/ac.php",
+		"/C/xampp/htdocs/abjweb/application/views/page/nosotros/ns/ns.php",
+		"/C/xampp/htdocs/abjweb/application/config/constants.php",
+		"/C/xampp/htdocs/abjweb/statics/css/theme.css",
+		"/C/xampp/htdocs/abjweb/statics/css/error_fmsg.css",
+		"/C/xampp/htdocs/abjweb/application/views/page/nosotros/ns/css/ns.css",
+		"/C/xampp/htdocs/abjweb/application/views/page/mas/ms/ms.php",
+		"/C/xampp/htdocs/abjweb/application/views/page/fotos/ft/ft.php",
+		"/C/xampp/htdocs/abjweb/statics/css/ResetElements.css",
+		"/C/xampp/htdocs/abjweb/statics/css/LTFPP.css",
+		"/C/xampp/htdocs/abjweb/statics/css/listardetalleproxzonaxmes.css",
+		"/C/xampp/htdocs/abjweb/statics/css/listadodezonas.css",
+		"/C/xampp/htdocs/abjweb/statics/css/listadeempresas.css",
+		"/C/xampp/htdocs/abjweb/statics/css/esquema.css",
+		"/C/xampp/htdocs/abjweb/statics/css/detallexproductogeneral.css",
+		"/C/xampp/htdocs/abjweb/statics/css/crearproyeccionjefedezona.css",
+		"/C/xampp/htdocs/abjweb/statics/css/crearnuevaproyeccion.css",
+		"/C/xampp/htdocs/abjweb/statics/css/allproyectionsmesdetails.css",
+		"/C/xampp/htdocs/abjweb/statics/css/allproyectionsdetails.css",
+		"/C/xampp/htdocs/abjweb/statics/css/allproyections.css",
+		"/C/xampp/htdocs/abjweb/statics/css/controls.scss",
+		"/C/xampp/htdocs/abjweb/statics/css/formulariodeHerramientasdeProyecciondemiZona.css",
+		"/C/xampp/htdocs/abjweb/system/libraries/Cache/drivers/Cache_memcached.php",
+		"/C/xampp/htdocs/abjweb/application/config/constantes.php",
+		"/C/Users/Gianpiere/Desktop/Diseño GALAXY ACE/UOT-03-29-21-12-1_disfinal - copia/app/SystemUI/res/anim/slide_out_left_basic.xml",
+		"/C/xampp/htdocs/abjweb/system/core/Config.php",
+		"/C/xampp/htdocs/abjweb/application/.htaccess",
+		"/C/xampp/htdocs/abjweb/application/index.html",
+		"/C/Users/Gianpiere/Documents/UOT-03-29-06-19-1/app/SystemUI/res/color/dark_text_bright_focused.xml",
+		"/C/Users/Gianpiere/Documents/UOT-03-29-06-19-1/app/SystemUI/res/color/bright_text_dark_focused.xml",
+		"/C/Users/Gianpiere/Documents/Sublime Text Build 3059 x64/Data/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Gianpiere/Documents/Sublime Text Build 3059 x64/Data/Packages/User/Preferences.sublime-settings",
+		"/C/xampp/htdocs/abjweb/application/core/MY_Model.php",
+		"/G/UOT-03-27-19-15-1/META-INF/com/google/android/updater-script",
+		"/G/actualizarbootanimation/META-INF/com/google/android/updater-script",
+		"/C/xampp/htdocs/abjweb/statics/.htaccess"
+	],
+	"find":
+	{
+		"height": 21.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"",
+			"Z:\\application",
+			"Z:\\application\\views",
+			"views",
+			"*.js",
+			"*.php",
+			"Z:\\application\\models",
+			"",
+			"*.js",
+			"",
+			"Z:\\application\\views",
+			"*.php",
+			"",
+			"Pruebas.php",
+			"Pruebas",
+			"",
+			"*.php",
+			"",
+			"Z:\\statics\\js",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"EmailDestino",
+			"this->Config",
+			"enviar",
+			"this",
+			"EnviarEmail",
+			"Invalid address",
+			"Invalid address: You must provide at least one recipient email address.",
+			"$Params",
+			"Params",
+			"obj",
+			"GL_Functions",
+			"NombreUsuario",
+			"jCrop",
+			"sendEmail",
+			"codigoactivacion",
+			"$codigoactivacion",
+			"passconf",
+			"repeatpassword",
+			"btn_registrar",
+			"click",
+			"#fancy_wrap",
+			".fancy_wrap",
+			"http://localhost/statics/img/",
+			"(http://localhost/statics/img/",
+			".rasgadoL",
+			"http://localhost",
+			"facebook_metro.png",
+			"http://localhost/statics/img/icons/facebook_metro.png",
+			"bv",
+			"pathmask",
+			"Bienvenida",
+			"constantes",
+			"href=\"#Mas\"",
+			"ac",
+			"bv",
+			"db",
+			"$db",
+			"default",
+			"isQuery",
+			"separacion_1",
+			"1500px",
+			"sliderpanel",
+			"silver",
+			"sliderpanel",
+			"FFF5E7",
+			"msgtop",
+			"ingresar",
+			"socialplugins",
+			"content",
+			"\\",
+			"allproyections",
+			"|",
+			"presentacion_p",
+			"min-width: 150px;\n	padding: 8px 15px 8px 5px;",
+			"padding: 8px 12px 8px 5px;\n	text-align: left;",
+			"cabeceradatos",
+			"datos_cabecerarl",
+			"padding: 5px;",
+			"width: 100%;",
+			"max-width",
+			"{",
+			"detalle",
+			"li class=\"productodtglp\"",
+			"p",
+			"li",
+			"Opcion",
+			"aceptar",
+			".containt_child_meses ul li",
+			"''",
+			"landig",
+			"menucreacionproyeccionzona",
+			"listarproyecciondezona.php",
+			"menucreacionproyeccionzona",
+			"TitulodeZona",
+			"aprobar",
+			".peticion_pendienteaprobacion button",
+			"<button>Aprobar</button>",
+			"peticion_pendienteaprobacion",
+			"aprobar",
+			"content_detailsproyections",
+			".cash",
+			"ul",
+			"list-sty",
+			"$presentacion_producto",
+			"$html_final",
+			"13",
+			"$Familiais",
+			"$this->productosdetallados",
+			"familiasListado",
+			"proyectionsdetailszone.php",
+			"Diagrama de Proyeccion de Zona",
+			"peticion_pendienteaprobacion",
+			"<button>Aprobar</button>",
+			"allproyectionsmesdetails",
+			"class=\"presentacion_p",
+			"`",
+			"SQL_ZonasProyectadasconMonto",
+			"SQL_SELECT_ListarProductosDeUnMes",
+			"SQL_SELECT_ListarProductosDeUnMesenUnaProyeccion",
+			"SQL_ZonasProyectadasconMonto",
+			"SQL_ZonaProyectadaconMonto",
+			"SQL_SELECT_DetallesdeMesdeunaProyeccion",
+			"SP_SELECT_GananciadeVentasxMesdeUnaZona",
+			"SQL_SELECT_DetallesdeMesdeunaProyeccion",
+			"SP_SELECT_GanaciadeVentasxMesdeUnaZona",
+			"SP_SELECT_GananciadeVentasxMesdeUnaZona",
+			",",
+			"`",
+			"ListarDetalleProyecciondeZona",
+			"detalleproyecciondeunazona",
+			"detalleproyecciondeunazonaxmes",
+			"ListarDetalleProyecciondeZonaxMes",
+			"allproyectionsmesdetails",
+			"Lista de Productos y Presentaciones del mes de <span>ENERO</span>",
+			";\n",
+			"detalleproyecciondeunazona",
+			" $this->css = array('allproyectionsmesdetails.css');\n  291:         $this->js = array('allproyectionsmesdetails.js');\n  292:         $this->noTheme('page/gerentecorporativo/allproyectionsmesdetails.php');",
+			"allproyectionsmesdetails",
+			"ListarDetalleProyecciondeZona",
+			"Corporativo/AnualProyection/30",
+			"AnualProyection",
+			"SQL_ZonaListarProyeccionesdeunazona_return",
+			"ction class=\"menucreacionproyeccionzona\"",
+			"menucreacionproyeccionzona",
+			"generalproy_estado",
+			"AnualProyection",
+			"NuevaProyectionGeneral",
+			"form_aceptarCreaciondeProyeccionGeneral"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"../img/",
+			"href=\"Mas\"",
+			"",
+			"\n",
+			",\n\n",
+			"\n",
+			"",
+			";\n",
+			"	",
+			"",
+			">",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "application/controllers/Login.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8495,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5120,
+								5120
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1209.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 29.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.exec":
+	{
+		"height": 267.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 88.0
+	},
+	"project": "abjWebProyectGRB.sublime-project",
+	"replace":
+	{
+		"height": 38.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"login",
+				"application\\controllers\\Login.php"
+			],
+			[
+				"html_comp",
+				"application\\libraries\\lbl_Html_Compact.php"
+			],
+			[
+				"header",
+				"application\\views\\template\\theme\\header.php"
+			],
+			[
+				"login.php",
+				"application\\controllers\\Login.php"
+			],
+			[
+				"routes",
+				"application\\config\\routes.php"
+			],
+			[
+				"es_lang",
+				"application\\language\\es\\spanish_lang.php"
+			],
+			[
+				"fancyjs",
+				"statics\\js_lib\\fancyscript.js"
+			],
+			[
+				"template",
+				"application\\views\\template\\theme\\template.php"
+			],
+			[
+				"footer",
+				"application\\views\\template\\fancy\\footer.php"
+			],
+			[
+				"home",
+				"application\\controllers\\Home.php"
+			],
+			[
+				"fancy/head",
+				"application\\views\\template\\fancy\\header.php"
+			],
+			[
+				"head",
+				"application\\views\\template\\fancy\\header.php"
+			],
+			[
+				"login.js",
+				"statics\\js_lib\\login.js"
+			],
+			[
+				"constant",
+				"application\\config\\constants.php"
+			],
+			[
+				"thematica.css",
+				"statics\\css\\Thematica.css"
+			],
+			[
+				".css",
+				"statics\\css\\login.css"
+			],
+			[
+				"config",
+				"application\\config\\config.php"
+			],
+			[
+				"constantes",
+				"application\\config\\constantes.php"
+			],
+			[
+				"ht",
+				".htaccess"
+			],
+			[
+				"htaccess",
+				".htaccess"
+			],
+			[
+				".htaccess",
+				".htaccess"
+			],
+			[
+				"constants",
+				"application\\config\\constants.php"
+			],
+			[
+				"bv.cs",
+				"application\\views\\page\\bienvenidos\\bv\\css\\bv.css"
+			],
+			[
+				"consta",
+				"application\\config\\constants.php"
+			],
+			[
+				"bv",
+				"application\\views\\page\\bienvenidos\\bv\\bv.php"
+			],
+			[
+				"ms.php",
+				"application\\views\\page\\mas\\ms\\ms.php"
+			],
+			[
+				"databa",
+				"application\\config\\database.php"
+			],
+			[
+				"database",
+				"application\\config\\database.php"
+			],
+			[
+				"m_de",
+				"application\\models\\m_Devocional.php"
+			],
+			[
+				"them",
+				"statics\\css\\Thematica.css"
+			],
+			[
+				"inde",
+				"index.php"
+			],
+			[
+				"allpro",
+				"statics\\css\\allproyectionsdetails.css"
+			],
+			[
+				"page/gerentecorporativo/allproyectionsdetails.php",
+				"application\\views\\page\\gerentecorporativo\\allproyectionsdetails.php"
+			],
+			[
+				"page/gerentecorporativo/proyectionsdetailszone.php",
+				"application\\views\\page\\gerentecorporativo\\proyectionsdetailszone.php"
+			],
+			[
+				"jefe",
+				"application\\controllers\\JefedeZona.php"
+			],
+			[
+				"vinculacionproyecciongeneraltoproyeccionzone.php",
+				"application\\views\\page\\gerentecorporativo\\vinculacionproyecciongeneraltoproyeccionzone.php"
+			],
+			[
+				"logi",
+				"application\\controllers\\LoginUserAccess.php"
+			],
+			[
+				"lbl",
+				"application\\libraries\\lbl_Html_Compact.php"
+			],
+			[
+				"allproyectionsmesdetails.php",
+				"application\\views\\page\\gerentecorporativo\\allproyectionsmesdetails.php"
+			],
+			[
+				"m_proy",
+				"application\\models\\m_Proyecciones.php"
+			],
+			[
+				"m_p",
+				"application\\models\\m_Proyecciones.php"
+			],
+			[
+				"m_",
+				"application\\models\\m_Proyecciones.php"
+			],
+			[
+				"listardetalleproxzonaxmes.php",
+				"application\\views\\page\\jefedezona\\listardetalleproxzonaxmes.php"
+			],
+			[
+				"gere",
+				"application\\controllers\\GerenteCorporativo.php"
+			],
+			[
+				"m",
+				"application\\models\\m_Proyecciones.php"
+			],
+			[
+				"gerente",
+				"application\\controllers\\GerenteCorporativo.php"
+			],
+			[
+				"gerentecorporativo",
+				"application\\controllers\\GerenteCorporativo.php"
+			],
+			[
+				"gecor",
+				"application\\controllers\\GerenteCorporativo.php"
+			],
+			[
+				"geren",
+				"Z\\application\\controllers\\GerenteCorporativo.php"
+			],
+			[
+				"content_proyecciondezona.css",
+				"statics\\css\\content_proyecciondezona.css"
+			],
+			[
+				"selectable",
+				"C:\\Users\\gianpiere.ramos\\Desktop\\STx64 GRB\\Data\\Packages\\User\\selectable_snipped.sublime-snippet"
+			],
+			[
+				"prueba",
+				"application\\controllers\\Pruebas.php"
+			],
+			[
+				"m_pro",
+				"application\\models\\m_Proyecciones.php"
+			],
+			[
+				"m_proyec",
+				"application\\models\\m_Proyecciones.php"
+			],
+			[
+				"my",
+				"application\\core\\MY_Model.php"
+			],
+			[
+				"my_",
+				"application\\core\\MY_Model.php"
+			],
+			[
+				"mysqli/mysqli_driver.php",
+				"system\\database\\drivers\\mysqli\\mysqli_driver.php"
+			],
+			[
+				"m_pr",
+				"application\\models\\m_Proyecciones.php"
+			],
+			[
+				"conte.css",
+				"statics\\css\\content_proyecciondezona.css"
+			],
+			[
+				"database/db_",
+				"system\\database\\DB_driver.php"
+			],
+			[
+				"db_driver",
+				"system\\database\\DB_driver.php"
+			],
+			[
+				"allproyections.js",
+				"statics\\js\\allproyections.js"
+			],
+			[
+				"zonasx",
+				"application\\views\\page\\home\\controles\\proyectarzonaxmes.php"
+			],
+			[
+				"ventasatipicas.php",
+				"application\\models\\m_VentasAtipicas.php"
+			],
+			[
+				"route",
+				"application\\config\\routes.php"
+			],
+			[
+				"",
+				"statics\\js\\content_proyecciondezona.js"
+			],
+			[
+				"zo.css",
+				"statics\\css\\content_proyecciondezona.css"
+			],
+			[
+				"content_.js",
+				"statics\\js\\content_proyecciondezona.js"
+			],
+			[
+				"proyecdeta",
+				"application\\views\\page\\gerentecorporativo\\proyectionsdetailszone.php"
+			],
+			[
+				"allproyectionsdetails.js",
+				"statics\\js\\allproyectionsdetails.js"
+			],
+			[
+				"view/page/gerente",
+				"application\\views\\page\\gerentecorporativo\\allproyections.php"
+			],
+			[
+				"allproyectionsdetails.css",
+				"statics\\css\\allproyectionsdetails.css"
+			],
+			[
+				"allproyections.php",
+				"application\\views\\page\\gerentecorporativo\\allproyections.php"
+			],
+			[
+				"listarproyeccionestotales",
+				"application\\views\\page\\home\\controles\\listarproyeccionestotales.php"
+			],
+			[
+				"m_producto",
+				"application\\models\\m_Producto.php"
+			],
+			[
+				"allproyections.css",
+				"statics\\css\\allproyections.css"
+			],
+			[
+				"pruebas",
+				"application\\controllers\\Pruebas.php"
+			],
+			[
+				"all",
+				"statics\\js\\allproyections.js"
+			],
+			[
+				"loginuseraccess",
+				"application\\controllers\\LoginUserAccess.php"
+			],
+			[
+				"template/",
+				"application\\views\\template\\theme\\template.php"
+			],
+			[
+				"loginuser",
+				"application\\controllers\\LoginUserAccess.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 58.0,
+		"selected_items":
+		[
+			[
+				"SQL_ListarProductosyDetallesdeunMesProyectadoxZona",
+				"SQL_ListarProductosyDetallesdeunMesProyectadoxZona"
+			],
+			[
+				"presentacion_p",
+				"presentacion_p"
+			],
+			[
+				"orProductoProyections",
+				"orProductoProyections"
+			],
+			[
+				"from_val",
+				"CI_Form_validation"
+			],
+			[
+				"login",
+				"loginaccess"
+			]
+		],
+		"width": 464.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 274.0,
+	"status_bar_visible": false,
+	"template_settings":
+	{
+	}
+}

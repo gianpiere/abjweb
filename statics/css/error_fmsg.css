@@ -1,0 +1,30 @@
+/*error_fmsg.css*/
+#fancy_content_msg{ /* Contenedor Principal */
+	background: url(http://10.10.1.8:8087/statics/img/pix_white_90.png);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+#content_fancy{ /* sub contenedor del mensaje */
+	color: #FF0022;
+    font-size: 20px;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 5%;
+    width: 500px;
+    height: 300px;
+   	max-height:100%;
+}
+
+#fancy_error{ /* contenedor mas cercano al mensaje */
+	/*position: relative;
+	margin-left: 50%;
+	margin-top: 30%;*/
+}
+
+html,body{
+	overflow: hidden;
+}

@@ -1,0 +1,15 @@
+###########################################################################
+# Permite analizar archivos css como php para regular la variables PHP, CSS
+<Files *.scss>
+	# <?php header("Content-type: text/css; charset: UTF-8"); ?> 
+	ForceType application/x-httpd-php
+	AddHandler application/x-httpd-php .scss
+</Files>
+###########################################################################
+
+#<FilesMatch "^.*?.scss?$">
+#	ForceType php5-script
+#	SetHandler php5-script
+#</FilesMatch>
+
+# Options All -Indexes

@@ -1,0 +1,33 @@
+/** temporales **/
+
+/* basicos */ 
+.left{float: left;}
+.right{float: right;}
+
+.m10{margin: 10px 10px 10px 10px;}
+.mr0{margin-right: 0px;}
+.ml0{margin-left: 0px;}
+.mt0{margin-top: 0px;}
+.mb0{margin-bottom: 0px;}
+
+img{max-width: 100%;}
+
+
+/* 20px margen */
+/* 60px size */
+
+.sz1{width: 60px;}
+.sz2{width: 140px;}
+.sz3{width: 220px;}
+.sz4{width: 300px;}
+.sz5{width: 380px;}
+.sz6{width: 460px;}
+.sz7{width: 540px;}
+.sz8{width: 620px;}
+.sz9{width: 700px;}
+.sz10{width: 780px;}
+.sz11{width: 860px;}
+.szpanel{width: 940px; /* con margenes */}
+.szfull{width: 960px;/* sin margenes */}
+
+.transparent{ background: transparent;}

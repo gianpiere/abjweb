@@ -1,0 +1,46 @@
+/*
+|
+| Listado de Medidas de iconos.
+|
+*/
+i.small{
+	height: 24px;
+	width: 24px;
+}
+
+/*
+|
+| estandarizacion de iconos.
+|
+*/
+i.icn{
+	background-size: 100% 100%;
+	display: inline-block;
+	float: left;
+}
+
+/*
+|
+| Aspecto del Boton contenedor de un icono.
+|
+*/
+button[icn='']{ height: auto; width: auto; display: inline-table; padding: 1px; border: none; outline: none; background-color: transparent; cursor: pointer;} 
+button[icn=''] *{cursor: pointer; /* visualizamos a modo de link todo el boton y su contenido. */}
+
+/*
+|
+| Aspecto de la Descripcion de un icono de boton.
+|
+*/
+button[icn=''] span.description{vertical-align: sub; color: inherit;}
+
+/*
+|
+| Listado de Iconos del Proyecto.
+|
+*/
+.lupa{background-image: url('../../img/icons/lupa_white_green.png'); background-position: center; background-repeat: no-repeat;}
+.cursos{background-image: url('../../img/icons/cursos.svg'); background-position: center; background-repeat: no-repeat;}
+.nosotros{background-image: url('../../img/icons/users6.svg'); background-position: center; background-repeat: no-repeat;}
+.supervisores{background-image: url('../../img/icons/business54.svg'); background-position: center; background-repeat: no-repeat;}
+.contactanos{background-image: url('../../img/icons/leader.svg'); background-position: center; background-repeat: no-repeat;}

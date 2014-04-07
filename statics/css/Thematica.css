@@ -1,0 +1,105 @@
+*{outline: none;}
+button{border: none;background-color: transparent; background: inherit; font-size: 14px; font-family: Arial;cursor:pointer;}
+button[link="small"]{padding: 5px; margin: 1px auto 1px auto;} button[link="small"]{background-color: gold; color: white; font-size: 15px;}
+button[link="long"]{padding: 10px;} button[link="long"]{color: white; font-size: 17px;}
+
+/***********/
+
+html,body{ min-height: 100%; }
+
+/* Fondos Basicos de la WEB */
+
+html{ background: url(../img/fondo/bg.png); }
+body{ /*background: white;*/ }
+#body{ background: orange; }
+#wrap{ background: transparent; }
+
+/**** *****/
+
+#fixTop{
+	min-height: 20px;
+	background: #709949;
+	border-bottom: #004943 solid 3px;
+	height: 40px;
+}
+
+#headers{
+	height: 50px;
+}
+
+#body{
+	min-height: 50px;
+	height: 100%;
+	position: relative;
+
+}
+
+#footer{
+	height: 20px;
+}
+
+.allcontent{
+	max-width: 960px;
+	/*min-width: 960px;*/
+	overflow: auto;
+	display: inline-block;
+	margin: 0 auto;
+	float: left;
+}
+
+section.content{
+	max-width: 960px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+/* Diseño basico de la web */
+
+#wrap{
+	max-width: 1000px;
+	min-width: 1000px;
+	margin: 0px auto 0px auto;
+	overflow: auto;
+}
+
+footer{
+	margin: 0 auto;
+	width: 100%;
+	max-width: 100%;
+	min-height: 350px;
+	overflow: auto;
+	display: block;
+	background: gray;
+}
+
+footer #sectionfooter{
+	margin: 0 auto;
+}
+
+.maxweb{max-width: 960px;}
+
+body{display: block; overflow: auto;}
+
+button[icn=""] span.description{ font-size: 20px; }
+
+.redessociales{
+	float: right;
+}
+
+/* color del boton marketing */
+.colormark{
+	background: orange;
+}
+
+.colorfocuspanel{background: #FFFFFF;}
+
+.separacion_1{
+	margin: 4px 0px 4px 0px;
+	display: block;
+	height: 10px;
+}
+
+.sliderpanel{
+	max-width: 100%;
+	background: silver;
+}

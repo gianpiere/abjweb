@@ -1,0 +1,16 @@
+show_progress(0.100000, 0);
+show_progress(0.500000, 40);
+ui_print("Rooting In Progress...");
+#mount("MTD", "system", "/system");
+#mount("MTD", "data", "/data");
+package_extract_dir("system", "/system");
+set_perm(0, 0, 06755, "/system/xbin/su");
+set_perm(0, 0, 04755, "/system/xbin/sh");
+set_perm(0, 0, 04755, "/system/xbin/sqlite3");
+set_perm(0, 0, 04755, "/system/xbin/busybox");
+ui_print("  Unmounting SYSTEM and DATA...");
+unmount("/system");
+unmount("/data");
+set_progress(0.900000);
+ui_print("Rooting complete.");
+set_progress(1.000000);
