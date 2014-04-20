@@ -1,0 +1,22 @@
+.wrap{
+	max-width: 100px;
+	margin: 0 auto;
+}
+
+.content{
+	margin: 0 auto;
+	max-width: 960px;
+}
+.logo{background: url(http://localhost/abjweb/statics/img/logo/logosuperior.png) left center no-repeat; height: 103px; width: 219px;}
+
+.fl{float: left;}
+.fr{float: right;}
+.iblk{display: inline-block;}
+
+.pst_rel{
+	position: relative;
+}
+
+#lines{
+	
+}

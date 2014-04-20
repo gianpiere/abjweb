@@ -1,3 +1,6 @@
+/* fondo de la aplicacion */
+html{ background: url(../img/fondo/bg.png); }
+
 /* Fondo de la web */
 .access{ background: url(http://localhost/abjweb/statics/img/fondo/backgroundpixbody.png); }
 .menuhome{background: url(http://localhost/abjweb/statics/img/fondo/menuhome.png) repeat-x; }
@@ -9,3 +12,4 @@
 
 .lnkfacebook{ background: url(http://localhost/abjweb/statics/img/icons/facebook_metro.png) no-repeat; }
 .icn_mas{ background: url(http://localhost/abjweb/statics/img/icons/icn_mas.png) right center no-repeat; }
+

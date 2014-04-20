@@ -1,6 +1,6 @@
 (function($){
 	$.fn.extend({
-		fancyblack : function(option = {}){ if($(this).attr('disabled')){return false;} option = (option || {}); 
+		fancyblack : function(option){ if($(this).attr('disabled')){return false;} option = (option || {}); 
 			var o,REQUEST,$btn = $(this),defaults = {
 				url : ''
 			}; o = $.extend({},defaults,option);

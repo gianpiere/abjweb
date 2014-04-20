@@ -71,7 +71,7 @@ class Login extends MY_Controller{
         $this->form_validation->set_rules('passconf','Confirm Password', 'required');
         $this->form_validation->set_rules('email', 'Email', 'required');
 
-        $usnombre   = $this->input->post('name');
+        $usnombre   = ucwords($this->input->post('name'));
         $usemail    = $this->input->post('email');
         $password   = $this->input->post('password');
         $passconf   = $this->input->post('passconf');
@@ -83,32 +83,16 @@ class Login extends MY_Controller{
             $Params = array($usnombre,NULL,NULL,NULL,NULL,$usemail,$password,NULL);
             $insert_result = $this->m_UserLogin->SQL_lg_InsertUsuarioNuevo($Params);
             if(isQueryR($insert_result)):
-
-                $this->load->library('lbl_Html_Compact');
-                $HtmlParams = array(
-                    'NombreUsuario'     => 'Gianpiere Ramos Bernuy',
-                    'EmailMensaje'      => 'Su Codigo de COnfirmacion es: '.'07777770',
-                    'CodigoActivacion'  => '07777770',
-                    'EnlaceAlterno'     => 'http://localhost/abjweb/accountconfirmation/6743242'
-                );
-
-                $HTML_Mensaje = $this->lbl_html_compact->HTML_Email_ConfirmaciondeCuenta($HtmlParams);
-
-                $Parametros = array(
-                    'Email_Destino' => $usemail,
-                    'Email_Titulo'  => 'ABJ - Confirmacion de cuenta.',
-                    'Email_Motivo'  => 'Academia Biblica Juvenil :: Correo de Confirmacion.',
-                    'Email_Mensaje' => $HTML_Mensaje,
-                    'NombreUsuario' => explode($usnombre,' ')[0],
-                    'text_mensaje'  => 'Su Codigo de activacion es: '.'07777770'
-                );
                 
                 if(is_array($insert_result) && isset($insert_result) && !empty($insert_result)):
-                   #$this->sendEmail($Parametros);
+                    $PrimerNombre = lang('Global.text.pluralname');
+                    $name = ucfirst(strtolower(explode(' ',$insert_result[1],1)[0]));
+                    if(!empty($name)): $PrimerNombre = $name; endif;
 
                     $arraySession = array(
                         'UsuarioId'                     => $insert_result[0],
                         'UsuarioNombre'                 => $insert_result[1],
+                        'UsuarioPrimerNombre'           => $PrimerNombre,
                         'UsuarioEmail'                  => $insert_result[2],
                         'UsuarioToken'                  => $insert_result[3],
                         'UsuarioCodigoActivacion'       => $insert_result[4],
@@ -143,8 +127,259 @@ class Login extends MY_Controller{
     * ========================================================================
     */
     public function PreRegistro(){
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            $Codigo_post = $this->input->Post('token');
+                $usToken = $this->session->userdata('UsuarioToken');
+                $usCoAct = $this->session->userdata('UsuarioCodigoActivacion');
+            if (!empty($usToken) && !empty($usCoAct)):
+                $Codigo_sess = hash_hmac('crc32',$this->session->userdata('UsuarioToken'),$this->session->userdata('UsuarioCodigoActivacion'));
+                if ($Codigo_sess == $Codigo_post):
+                    $nombre = $this->session->userdata('UsuarioPrimerNombre');
+                    $PrimerNombre = lang('Global.text.pluralname');
+                    if(isset($nombre) && !empty($nombre)): 
+                        $PrimerNombre = $this->session->userdata('UsuarioPrimerNombre');
+                    endif;
+                    # enviar el Email..
+                    $this->load->library('lbl_Html_Compact');
+                    $HtmlParams = array(
+                        'NombreUsuario'     => $PrimerNombre,
+                        'EmailMensaje'      => 'su codigo es:',
+                        'CodigoActivacion'  => $this->session->userdata('UsuarioCodigoActivacion'),
+                        'EnlaceAlterno'     => ''
+                    ); $HTML_Mensaje = $this->lbl_html_compact->HTML_Email_ConfirmaciondeCuenta($HtmlParams);
 
-        echo 'preRegistro';
+                    $Parametros = array(
+                        'Email_Destino' => $this->session->userdata('UsuarioEmail'),
+                        'Email_Titulo'  => lang('Global.text.emailconfirtitle'),
+                        'Email_Motivo'  => lang('Global.text.emailconfirmacion'),
+                        'Email_Mensaje' => $HTML_Mensaje,
+                        'NombreUsuario' => $PrimerNombre,
+                        'text_mensaje'  => lang('Global.text.emailconfmsg').$this->session->userdata('UsuarioCodigoActivacion')
+                    ); $this->sendEmail($Parametros);
+
+                else:
+                    # no coinside el token asignado..
+                endif;
+            else:
+                # usuario no tiene session o se perdio..
+            endif;
+        }else{
+            $this->Pasos();
+        }
+    }
+
+    public function EmailConfirmCode(){
+        if ($_SERVER['REQUEST_METHOD'] == 'POST'):
+            $email  = $this->session->userdata('UsuarioEmail');
+            $ccodi  = $this->session->userdata('UsuarioCodigoActivacion');
+            $codigo = $this->input->post('codigo');
+            if(!$email): $email = $this->input->post('email'); endif;
+            if($ccodi == (int) $codigo):
+                $params = array(
+                    'UsuarioId'     => $this->session->userdata('UsuarioId'),
+                    'UsuarioCodigo' => $codigo, 
+                    'Token'         => $this->session->userdata('UsuarioToken')
+                );
+                $this->load->model('m_userlogin');
+                $result = $this->m_userlogin->SQL_UsuarioConfirmarCodigo($params);
+                echo json_encode($result);
+            else:
+                echo json_encode(array('00','ERROR Codigo Incorrecto'));
+            endif;
+        endif;
+    }
+
+    public function DatosPersonalesBasicos(){
+        $foto = $this->input->post('foto_b64');
+        $sexo = $this->input->post('rbo_sexo');
+        $supervisor = $this->input->post('supervisor_id');
+        $fechanacim = $this->input->post('fecha_nac');
+
+        $this->load->model('m_UserLogin');
+
+        $Params = array(
+            'xUsuarioId'                => $this->session->userdata('UsuarioId'),
+            'xUsuarioToken'             => $this->session->userdata('UsuarioToken'),
+            'xUsuarioSexo'              => $sexo, 
+            'xUsuarioFechaNacimiento'   => $fechanacim, 
+            'xUsuarioSupervisorId'      => $supervisor, 
+            'xUsuarioFotoUrl'           => $foto
+        );
+        $result = $this->m_UserLogin->SQL_usaddUsuarioDatosBasicos($Params);
+
+        echo json_encode($result);
+    }
+
+    public function CursosRealizadosxAgregar(){
+        $curso      = (int) $this->input->post('cursoid');
+        $UsuarioId  = $this->session->userdata('UsuarioId');
+        $usToken    = $this->session->userdata('UsuarioToken');
+
+        if($curso && $UsuarioId && $usToken):
+            $this->load->model('m_cursos');
+            $params = array(
+                'xUsuarioId'    => $UsuarioId,
+                'xUsuarioToken' => $usToken,
+                'xCursoId'      => $curso
+            );
+            $result = $this->m_cursos->SQL_crspAgregarCursoPrevio($params);
+            echo json_encode($result);
+        elseif(!$UsuarioId):
+            echo json_encode(array('00','05'));
+        else:
+            echo json_encode(array('00','Curso invalido'));
+        endif;
+    }
+
+    public function Pasos(){
+            $Paso = (int) $this->uri->segment(3,false);
+            if($Paso == 1 || !$Paso):
+                $this->PasoUno();
+            elseif($Paso == 2):
+                $this->PasoDos();
+            elseif($Paso == 3):
+                $this->PasoTres();
+            else:
+                # nada
+            endif;
+    }
+
+    public function PasoUno(){
+
+            $this->css = array('pasouno.css');
+            $this->js  = array('pasouno.js');
+            $name = $this->session->userdata('UsuarioNombre');
+            $PrimerNombre = $this->session->userdata('UsuarioPrimerNombre');
+            $this->descripcion  = 'Confirma el codigo que enviamos a tu E-mail';
+            $this->email        = $this->session->userdata('UsuarioEmail');
+            $this->nombre       = $PrimerNombre;
+
+            $Codigo_sess = hash_hmac('crc32',$this->session->userdata('UsuarioToken'),$this->session->userdata('UsuarioCodigoActivacion'));
+            $this->token        =  $Codigo_sess;
+
+            $this->load->model('m_cursos');
+            $cursos = $this->m_cursos->SQL_crsListarCursos();
+            if(isQueryR($cursos)):
+                $ListadeCursos = [];
+                foreach ($cursos as $crs => $curso) {
+                    $cur = array(
+                        'text'  =>$curso[1].','.lang('Global.text.nivel').$curso[11].' ('.$curso[12].')',
+                        'value' =>$curso[0]
+                    ); 
+                    $ListadeCursos[] = $cur;
+                }
+
+                $this->listadecursos = json_encode($ListadeCursos);
+            endif;
+
+            $this->load->model('m_supervisor');
+            $supervisores = $this->m_supervisor->SQL_crsListarSupervisor();
+            if(isQueryR($supervisores)):
+                $ListarSupervisores = [];
+                foreach ($supervisores as $sup => $Supervisor) {
+                    $superv = array(
+                        'text'  => $Supervisor[1],
+                        'value' => $Supervisor[0]
+                    );
+                    $ListarSupervisores[] = $superv;
+                }
+
+                $this->listarsupervisores = json_encode($ListarSupervisores);
+            endif;
+
+            $this->vista('page/newaccount/pasouno/','pasouno.php');
+    }
+
+    public function PasoDos(){
+            $this->css = array('pasodos.css');
+            $this->js  = array('pasodos.js');
+            $name = $this->session->userdata('UsuarioNombre');
+            $this->descripcion  = 'Ingresa algunos datos personales';
+            $this->email        = $this->session->userdata('UsuarioEmail');
+            $this->nombre       = $this->session->userdata('UsuarioPrimerNombre');
+
+            $this->load->model('m_cursos');
+            $cursos = $this->m_cursos->SQL_crsListarCursos();
+            if(isQueryR($cursos)):
+                $ListadeCursos = [];
+                foreach ($cursos as $crs => $curso) {
+                    $cur = array(
+                        'text'  =>$curso[1].','.lang('Global.text.nivel').$curso[11].' ('.$curso[12].')',
+                        'value' =>$curso[0]
+                    ); 
+                    $ListadeCursos[] = $cur;
+                }
+
+                $this->listadecursos = json_encode($ListadeCursos);
+            endif;
+
+            $this->load->model('m_supervisor');
+            $supervisores = $this->m_supervisor->SQL_crsListarSupervisor();
+            if(isQueryR($supervisores)):
+                $ListarSupervisores = [];
+                foreach ($supervisores as $sup => $Supervisor) {
+                    $superv = array(
+                        'text'  => $Supervisor[1],
+                        'value' => $Supervisor[0]
+                    );
+                    $ListarSupervisores[] = $superv;
+                }
+
+                $this->listarsupervisores = json_encode($ListarSupervisores);
+            endif;
+
+            $this->vista('page/newaccount/pasodos/','pasodos.php');
+    
+    }
+
+    public function PasoTres(){
+            $this->css = array('pasotres.css');
+            $this->js  = array('pasotres.js');
+            $name = $this->session->userdata('UsuarioNombre');
+            $PrimerNombre = $this->session->userdata('UsuarioPrimerNombre');
+            $this->descripcion  = 'Confirma el codigo que enviamos a tu E-mail';
+            $this->email        = $this->session->userdata('UsuarioEmail');
+            $this->nombre       = $PrimerNombre;
+
+            $Codigo_sess = hash_hmac('crc32',$this->session->userdata('UsuarioToken'),$this->session->userdata('UsuarioCodigoActivacion'));
+            $this->token        =  $Codigo_sess;
+
+            $this->load->model('m_cursos');
+            $cursos = $this->m_cursos->SQL_crsListarCursos();
+            if(isQueryR($cursos)):
+                $ListadeCursos = [];
+                foreach ($cursos as $crs => $curso) {
+                    $cur = array(
+                        'text'  =>$curso[1].','.lang('Global.text.nivel').$curso[11].' ('.$curso[12].')',
+                        'value' =>$curso[0]
+                    ); 
+                    $ListadeCursos[] = $cur;
+                }
+
+                $this->listadecursos = json_encode($ListadeCursos);
+            endif;
+
+            $this->load->model('m_supervisor');
+            $supervisores = $this->m_supervisor->SQL_crsListarSupervisor();
+            if(isQueryR($supervisores)):
+                $ListarSupervisores = [];
+                foreach ($supervisores as $sup => $Supervisor) {
+                    $superv = array(
+                        'text'  => $Supervisor[1],
+                        'value' => $Supervisor[0]
+                    );
+                    $ListarSupervisores[] = $superv;
+                }
+
+                $this->listarsupervisores = json_encode($ListarSupervisores);
+            endif;
+
+            $this->vista('page/newaccount/pasotres/','pasotres.php');
+    
+    }
+
+    public function LandingPageUser(){
+        echo 'landing';
     }
 
     public function sendEmail($Params){

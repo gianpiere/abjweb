@@ -31,15 +31,18 @@ class MY_Controller extends CI_Controller {
 		$this->load->view('template/theme/template.php',$data);
 	}
 
-	public function vista($view){
+	public function vista($folder,$view){
 		$data['css'] = isset($this->css) ? $this->css : false;
 		$data['css_lib'] = isset($this->css_lib) ? $this->css_lib : false;
 		$data['js'] = isset($this->js) ? $this->js : false;
 		$data['libjs'] = isset($this->libjs) ? $this->libjs : false;
 		$data['url'] = isset($this->url) ? $this->url : false;
 
+		$data['folder'] = $folder;
+		$data['pathmask'] = BASE_PATH.str_replace('page_', 'static/', str_replace('/', '_',$folder));
+		
 		$data['header'] = 'template/vista/header.php';
-		$data['view'] = $view;
+		$data['view'] = $folder.$view;
 		$data['footer'] = 'template/vista/footer.php';
 		$this->load->view('template/vista/template.php',$data);
 	}

@@ -61,7 +61,7 @@
 				<button id="facebooklogin" class="loginaccess">Acceder con facebook</button>
 				<div class="dividir_login">ó</div>
 				<form id="accountacess" name="accountacess" action="accountacess" method="post">
-					<input type="password" id="email" name="email" placeholder="<?= lang('Global.input.email');?>" class="" />
+					<input type="text" id="email" name="email" placeholder="<?= lang('Global.input.email');?>" class="" />
 					<input type="password" id="password" name="password" placeholder="<?= lang('Global.input.pass');?>" class="" />
 					<button id="btn_iniciarsession" class="btn_iniciarsession"><?=lang('Global.button.accountacess');?></button>
 				</form>

@@ -43,4 +43,40 @@ class m_UserLogin extends MY_Model{
 		return $Results;
 	}
 
+	/**
+	* @package 		: m_UserLogin
+	* @subpackage 	: 
+	* @todo 		: confirma el codigo de email de un usuario
+	* @see 			: 
+	* @param 		: no params
+	*/
+	function SQL_UsuarioConfirmarCodigo($params){
+		$sql = "CALL SP_usConfirmarActivacionUsuario(?,?,?)";
+		$QueryRpt = $this->db->query($sql,$params);
+		$Resultado = $QueryRpt->row_array();
+		$this->db->close();
+		$Results = $this->QueryRows($Resultado);
+		return $Results;
+	}
+
+	/**
+	* @package 		: m_UserLogin
+	* @subpackage 	: 
+	* @todo 		: actualiza los datos basicos de un usuario
+	* @see 			: 
+	* @param 		: no params
+	*/
+	function SQL_usaddUsuarioDatosBasicos($params){
+		$sql = "CALL SP_usUpdateUsuarioDatosBasicos(?,?,?,?,?,?)";
+		$QueryRpt = $this->db->query($sql,$params);
+		$Resultado = $QueryRpt->row_array();
+		$this->db->close();
+		$Results = $this->QueryRows($Resultado);
+		return $Results;
+	}
+
+
+
+
+
 }

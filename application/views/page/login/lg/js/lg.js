@@ -22,11 +22,21 @@ $('#btn_registrar').on('click',function(){
 });
 
 $('#btn_iniciarsession').on('click',function(){
-	console.log('mensajito2');
+	$.ajax({
+		type		: 'POST',
+		data 		: $('#accountacess').serialize(),
+		url 		: 'AccountAccess',
+		success 	: function(data){
+			console.log(data);
+		},
+		error 		: function(){
+
+		}
+	});
 	return false;
 });
 
 $('#facebooklogin').on('click',function(){
-	console.log('mensajito3');
+	console.log('Login Facebook no implementado aun..');
 	return false;
 });

@@ -45,9 +45,19 @@ $route['404_override'] = '';
 * @date 	: 
 * @todo 	: Function description and method use.
 **************************************************************************/
-$route['fnc_login'] = 'Login/FormularioRegistro';
-$route['registrar'] = 'Login/RegistrarUsuario';
-$route['Account'] 	= 'Login/PreRegistro';
+$route['fnc_login'] 						= 'Login/FormularioRegistro';
+$route['registrar'] 						= 'Login/RegistrarUsuario';
+$route['Account'] 							= 'Login/PreRegistro';
+$route['AccountAccess'] 					= 'Login/PreRegistro';
+$route['SendEmail'] 						= 'Login/PreRegistro';
+$route['SendEmail/(:any)'] 					= 'Login/PreRegistro/$1';
+$route['Account/confirmacionemail'] 		= 'Login/EmailConfirmCode';
+$route['Account/datosbasicos'] 				= 'Login/DatosPersonalesBasicos';
+$route['Account/addcursoprevio'] 			= 'Login/CursosRealizadosxAgregar';
+$route['Account/LandingPage'] 				= 'Login/LandingPageUser';
+$route['Account/paso']						= 'Login/Pasos';
+$route['Account/paso/(:num)']				= 'Login/Pasos/$1';
+
 
 //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::GRB://
 

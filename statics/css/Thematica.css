@@ -9,7 +9,6 @@ html,body{ min-height: 100%; }
 
 /* Fondos Basicos de la WEB */
 
-html{ background: url(../img/fondo/bg.png); }
 body{ /*background: white;*/ }
 #body{ background: orange; }
 #wrap{ background: transparent; }

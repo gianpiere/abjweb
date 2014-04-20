@@ -39,6 +39,7 @@ define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 
 # Definimos las Constantes del Proyecto 
 define('BASE_PATH', 'http://localhost/abjweb/');
+define('KENDO',BASE_PATH.'statics/kui/');
 define('CSS', BASE_PATH.'statics/css/');
 define('CSS_LIB', BASE_PATH.'statics/css_lib/');
 define('JS', BASE_PATH.'statics/js/');
@@ -47,5 +48,8 @@ define('IMG', BASE_PATH.'statics/img/');
 define('GALERIA', BASE_PATH.'statics/galerias/');
 define('SLIDER', BASE_PATH.'statics/galerias/slider/');
 
+# Caracteres especiales
+define("LATIN1_UC_CHARS", "ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝ");
+define("LATIN1_LC_CHARS", "àáâãäåæçèéêëìíîïðñòóôõöøùúûüý");
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */
