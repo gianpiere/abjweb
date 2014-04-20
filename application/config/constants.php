@@ -47,6 +47,7 @@ define('JS_LIB', BASE_PATH.'statics/js_lib/');
 define('IMG', BASE_PATH.'statics/img/');
 define('GALERIA', BASE_PATH.'statics/galerias/');
 define('SLIDER', BASE_PATH.'statics/galerias/slider/');
+define('UPLOAD',BASE_PATH.'statics/upload/');
 
 # Caracteres especiales
 define("LATIN1_UC_CHARS", "ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝ");

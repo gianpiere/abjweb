@@ -9,7 +9,7 @@
 <section class="sliderpanel panel">
 	<div class="controls">
 		<div class="Texto" style="color:white;text-align:right;padding:10px;"><h2 style="color:yellow;">titulo</h2>este es un texto de prueba, <br/>solo de prueba y blanblablablal alsadasd sa s </div>
-		<button class="sld_action"><a href="#11">entrar</a></button>
+			<button class="sld_action"><a href="#11">entrar</a></button>
 		<div class="slideposition">
 			<i class="nofocus"></i>
 			<i class="onfocus"></i>

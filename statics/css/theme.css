@@ -143,6 +143,37 @@ footer #sectionfooter{
 	margin-top: 2px;
 }
 
+.userloginok #userlogin{
+	width: 150px;
+}
+
+.userloginok{
+    background: black;
+    border-right: 5px solid #008000;
+    float: right;
+    height: 23px;
+    margin-top: 2px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:white;
+    width: 150px;
+}
+.userloginok button img{
+	float: left;
+}
+
+.userloginok button span{
+	float: left;
+	color: white;
+	padding: 1px;
+	margin-left: 5px;
+}
+
+.userloginok button i.opt{
+	float: right;
+	color: white;
+}
 /* laterales rasgados */
 .rasgadoL{
 	float: left;

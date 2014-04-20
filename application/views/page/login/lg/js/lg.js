@@ -27,11 +27,21 @@ $('#btn_iniciarsession').on('click',function(){
 		data 		: $('#accountacess').serialize(),
 		url 		: 'AccountAccess',
 		success 	: function(data){
-			console.log(data);
+			try{
+				$newUri = $.parseJSON(data);
+				if($newUri[0] == 'OK'){
+					window.location.href=$newUri[0];
+				}else{
+					alert('Error Usuario o Password incorrecto');
+				}
+			}catch(e){
+				alert('ERROR INESPERADO');
+			}
+			
 		},
 		error 		: function(){
-
-		}
+			alert('ERROR AL CONECTARSE');
+		}	
 	});
 	return false;
 });

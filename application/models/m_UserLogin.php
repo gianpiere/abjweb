@@ -74,6 +74,24 @@ class m_UserLogin extends MY_Model{
 		$Results = $this->QueryRows($Resultado);
 		return $Results;
 	}
+	
+
+	/**
+	* @package 		: m_UserLogin
+	* @subpackage 	: 
+	* @todo 		: iniciar session
+	* @see 			: 
+	* @param 		: IN xUsuarioEmail VARCHAR(70), IN xUsuarioPassword VARCHAR(25)
+	*/
+	function SQL_usIniciarSession($params){
+		$sql = "CALL SP_usIniciarSession(?,?)";
+		$QueryRpt = $this->db->query($sql,$params);
+		$Resultado = $QueryRpt->row_array();
+		$this->db->close();
+		$Results = $this->QueryRows($Resultado);
+		return $Results;
+	}
+
 
 
 

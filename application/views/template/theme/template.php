@@ -7,9 +7,25 @@
 	<div class="inicialheader">
 	<div class="content socialplugins">
 		<a href="#"><button class="lnkfacebook"></button></a>
+		<?php # load user session
+			$usToken = $this->session->userdata('UsuarioToken');
+			$usPName = $this->session->userdata('UsuarioPrimerNombre');
+			$usPhoto = $this->session->userdata('UsuarioFotoUrl');
+		?>
+		
+		<?php if(isset($usToken) && !empty($usToken)): ?>
+		<div class="userloginok">
+			<button id="userlogin" type="button">
+				<img src="<?=UPLOAD;?><?= isset($usPhoto) && !empty($usPhoto) ? $usPhoto : 'fotousuario_mini.png' ?>" class="userimage_mini" />
+				<span class="name"><?= isset($usPName) && !empty($usPName) ? $usPName : '';?></span>
+				<i class="opt">•</i>
+			</button>
+		</div>
+		<?php else: ?>
 		<div class="useraccess">
 			<button id="ingresar" type="button"><?= lang('Global.ingreso'); ?></button>
 		</div>
+		<?php endif; ?>
 	</div>
 </div>
 <section id="wrap">

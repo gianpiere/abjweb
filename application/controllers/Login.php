@@ -168,6 +168,45 @@ class Login extends MY_Controller{
         }
     }
 
+    public function LogInAccess(){
+        if ($_SERVER['REQUEST_METHOD'] == 'POST'):
+            $email      = str_replace('%40','@',$this->input->post('email'));
+            $password   = $this->input->post('password');
+
+            if(!empty($email) && !empty($password)):
+                $this->load->model('m_UserLogin');
+                $params = array(
+                    'UserEmail'     => $email,
+                    'UserPassw'     => $password
+                );
+
+                $result = $this->m_UserLogin->SQL_usIniciarSession($params);
+                if(isset($result) && !empty($result)):
+                    $PrimerNombre = lang('Global.text.pluralname');
+                    $name = ucfirst(strtolower(explode(' ',$result[4],1)[0]));
+                    if(!empty($name)): $PrimerNombre = $name; endif;
+
+                    $arraySession = array(
+                        'UsuarioId'                     => $result[0],
+                        'UsuarioNombre'                 => $result[4],
+                        'UsuarioPrimerNombre'           => $PrimerNombre,
+                        'UsuarioEmail'                  => $result[1],
+                        'UsuarioToken'                  => $result[3],
+                        'UsuarioCodigoActivacion'       => NULL,
+                        'UsuarioFechaActivacion'        => NULL,
+                        'UsuarioEstado'                 => $result[6],
+                        'UsuarioDatosId'                => $result[16]
+                    );
+
+                    $this->session->set_userdata($arraySession);
+                    echo json_encode(array('OK', BASE_PATH.'Account/LandingPage'));
+                endif;
+            else:
+                echo json_encode(array('00','usuario o Password no ingresado'));
+            endif;
+        endif;
+    }
+
     public function EmailConfirmCode(){
         if ($_SERVER['REQUEST_METHOD'] == 'POST'):
             $email  = $this->session->userdata('UsuarioEmail');
@@ -337,7 +376,7 @@ class Login extends MY_Controller{
             $this->js  = array('pasotres.js');
             $name = $this->session->userdata('UsuarioNombre');
             $PrimerNombre = $this->session->userdata('UsuarioPrimerNombre');
-            $this->descripcion  = 'Confirma el codigo que enviamos a tu E-mail';
+            $this->descripcion  = 'Actualiza los cursos que ya llevaste';
             $this->email        = $this->session->userdata('UsuarioEmail');
             $this->nombre       = $PrimerNombre;
 
