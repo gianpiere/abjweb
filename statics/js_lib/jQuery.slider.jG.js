@@ -1,5 +1,5 @@
 (function($){
-	var defaults, plugin, version = '1.0', author = 'jgianpiere@gmail.com';
+	var o, defaults, plugin, version = '1.0', author = 'jgianpiere@gmail.com';
 	var DataSource, sliderProcess, $this; // [{},{}]
 	var opt = {position:0,count:0};
 	defaults = // defaults params 
@@ -17,28 +17,45 @@
 		aleatories				: false,
 		efects					: true,
 		mousepause 				: true,
-		animationslide			: 'onBoundOut',
+		animationslide			: 'easeInOutBack',
 		titlesanimation 		: true,
 		keydirectionaluse 		: false,
 		textpositionenfoque 	: true,
-		DataSource 				: false
+		DataSource 				: false,
+		defaultoptions 			: {textdirection:'right',titlecolor:'yellow',textcolor:'white'},
+		defaultbutton 			: ['ENTRAR','#']
 	};
 
 	function slideView(i){
+		// validar loop 
+		if(i>opt.count){opt.position = 0;}
+
 		$slide = DataSource[opt.position];
+
+		var defaultslide = {
+			title 			: null,
+			description 	: null,
+			img 			: null,
+			button			: ['','#',false],
+			options 		: {textdirection:'right',titlecolor:'yellow',textcolor:'white'}
+		}
+
+		$slider = $.extend({},defaultslide,$slide);
 
 		$controls 	= $this.children('.controls');
 		$items 		= $controls.children('.slideposition');
 		$sltext 	= $controls.children('.sliderText');
 		$imagen 	= $this.children('.picslider');
 
-		$sltext.children('h2').html($slide.title);
-		$sltext.children('span').html($slide.description);
+		$sltext.css({float:$slider.options.textdirection,'text-align':$slider.options.textdirection});
+		$sltext.children('h2').html($slider.title).css({color:$slider.options.titlecolor});
+		$sltext.children('span').html($slider.description).css({color:$slider.options.textcolor});
 
 		$slbuton 	= $controls.children('a.sld_act');
-		$slbuton.attr('href',$slide.button[1]).children('button').text($slide.button[0]);
+		if(!$slider.button[2]){$slbuton.css({display:'none'});}else{$slbuton.show(0);}
+		$slbuton.attr('href',$slider.button[1]).children('button').text($slider.button[0]);
 
-		$imagen.children('img').attr('src',$slide.img);
+		$imagen.children('img').attr('src',$slider.img);
 
 		itemfocus(i);
 	}
@@ -52,7 +69,7 @@
 	}
 
 	jQuery.fn.webslider = function(options){ $this = $(this);
-		var o = $.extend({},defaults,options);
+		o = $.extend({},defaults,options);
 		var $data = (o.DataSource || undefined); DataSource = $data;
 
 		if($data != undefined){
@@ -68,9 +85,11 @@
 				$items.append(item);
 			};
 
+			// iniciamos
+			slideView(opt.position);
+
+			// continuamos con el intervalo
 			sliderProcess = setInterval(function(){
-				// cambiando cosas
-				slideView(opt.position);
 
 				// validar loop 
 				if(opt.position == opt.count){
@@ -83,6 +102,10 @@
 					// avanzar slider
 					opt.position +=1;
 				}
+
+				// cambiando cosas
+				slideView(opt.position);
+
 			},o.betweentime);
 		}
 	}
