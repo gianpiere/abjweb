@@ -47,9 +47,24 @@
 		$sltext 	= $controls.children('.sliderText');
 		$imagen 	= $this.children('.picslider');
 
-		$sltext.css({float:$slider.options.textdirection,'text-align':$slider.options.textdirection});
-		$sltext.children('h2').html($slider.title).css({color:$slider.options.titlecolor});
-		$sltext.children('span').html($slider.description).css({color:$slider.options.textcolor});
+		// animacion de escape
+		$sltext.animate({ bottom: '-=100px',opacity:'0' }, "slow", 'easeOutQuad', function () { 
+			$sltext
+				.css({float:$slider.options.textdirection,'text-align':$slider.options.textdirection})
+			;
+			
+			$sltext.children('h2')
+				.css({color:$slider.options.titlecolor}).html($slider.title)
+			;
+			
+			$sltext.children('span')
+				.css({color:$slider.options.textcolor}).html($slider.description)
+			;
+			
+			$sltext	
+				.animate({ bottom: '+=100px',opacity:'100' }, 600, 'easeInOutBack', function () { })
+			;
+		});
 
 		$slbuton 	= $controls.children('a.sld_act');
 		if(!$slider.button[2]){$slbuton.css({display:'none'});}else{$slbuton.show(0);}
