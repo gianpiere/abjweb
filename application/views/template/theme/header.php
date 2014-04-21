@@ -11,10 +11,13 @@
 <link rel="alternate" title="GRB RSS" type="application/rss+xml" href="/feed.rss" />
 
 <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script> -->
-<script type="text/javascript" src="<?=JS_LIB;?>/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="<?=JS_LIB;?>/jquery-1.10.1.min.js"></script>
 <script type="text/javascript" src="<?=JS_LIB;?>easing/jquery.easing.1.3.js"></script>
 
 <!-- All Scripts -->
+<script type="text/javascript" src="<?=JS;?>allscript.js"></script>
+<script type="text/javascript" src="<?=JS_LIB;?>jQuery.slider.jG.js"></script>
+
 <script type="text/javascript" src="<?=JS_LIB;?>fancyscript.js"></script>
 <link rel="stylesheet" type="text/css" href="<?=CSS_LIB;?>fancystyle.css">
 
@@ -30,7 +33,7 @@
 	if(isset($this->css) && is_array($this->css)):
 		foreach ($this->css as $css => $CSS){
 			echo '<link rel="stylesheet" type="text/css" href="'.$pathmask.$CSS.'">';
-		}
+		} 
 	endif;
 ?>
 

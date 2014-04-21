@@ -178,13 +178,13 @@ footer #sectionfooter{
 .rasgadoL{
 	float: left;
 	width: 20px;
-	height: 981px;
+	height: 1px;
 }
 
 .rasgadoR{
 	float: left;
 	width: 20px;
-	height: 981px;
+	height: 1px;
 }
 
 .allcontent{
@@ -224,6 +224,10 @@ footer #sectionfooter{
 	position: relative;
 }
 
+.picslider{
+	max-height: 30%;
+}
+
 .sliderpanel .controls{
 	position: absolute;
 	top: 0px;
@@ -232,8 +236,10 @@ footer #sectionfooter{
 	bottom: 0px;
 	z-index: 1;
 }
-.Texto{
+
+.sliderText{
 	display: block;	position: relative;
+	padding:10px;
 }
 
 .sld_action{

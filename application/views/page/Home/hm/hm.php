@@ -8,26 +8,17 @@
 
 <section class="sliderpanel panel">
 	<div class="controls">
-		<div class="Texto" style="color:white;text-align:right;padding:10px;"><h2 style="color:yellow;">titulo</h2>este es un texto de prueba, <br/>solo de prueba y blanblablablal alsadasd sa s </div>
-			<button class="sld_action"><a href="#11">entrar</a></button>
+		<div data-slider="1" class="sliderText" text-position="right" style="display:block;">
+			<h2 data-title-color="yellow">titulo</h2>
+			<span data-text-color="white">este es un texto de prueba, <br/>solo de prueba y blanblablablal alsadasd sa s </span>
+		</div>
+		<a class="sld_act" href="#01"><button class="sld_action">entrar</button></a>
+		
 		<div class="slideposition">
-			<i class="nofocus"></i>
-			<i class="onfocus"></i>
-			<i class="nofocus"></i>
-			<i class="nofocus"></i>
-			<i class="nofocus"></i>
-			<i class="nofocus"></i>
-			<i class="nofocus"></i>
-			<i class="nofocus"></i>
-			<i class="nofocus"></i>
-			<i class="nofocus"></i>
-			<i class="nofocus"></i>
-			<i class="nofocus"></i>
-			<i class="nofocus"></i>
-			<i class="nofocus"></i>
+
 		</div>
 	</div>
-	<div> <img src="<?=SLIDER;?>slider_1.png" width="100%" height="auto" class="img_responsive"> </div>
+	<div class="picslider"> <img onerror="javascript:$(this).imgdefault({height:'200px',width:'940px'});" src="<?=SLIDER;?>slider_1.png" width="100%" height="auto" class="img_responsive"> </div>
 </section>
 
 <section class="optionfocushome colorfocuspanel">
