@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"data",
+				"data-position"
+			],
+			[
+				"co",
+				"count"
+			],
+			[
+				"rasg",
+				"rasgadoL"
+			],
+			[
 				"mar",
 				"margin-left"
 			],
@@ -220,68 +232,18 @@
 	"buffers":
 	[
 		{
-			"file": "application/controllers/Login.php",
+			"file": "application/views/template/theme/header.php",
 			"settings":
 			{
-				"buffer_size": 20645,
+				"buffer_size": 2626,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "application/models/m_UserLogin.php",
+			"file": "application/views/page/Home/hm/hm.php",
 			"settings":
 			{
-				"buffer_size": 2679,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "application/controllers/Home.php",
-			"settings":
-			{
-				"buffer_size": 1743,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "application/views/template/theme/template.php",
-			"settings":
-			{
-				"buffer_size": 3480,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "Searching 421 files for \"AccountAccess\"\n\nC:\\xampp\\htdocs\\abjweb\\application\\views\\page\\login\\lg\\js\\lg.js:\n   26  		type		: 'POST',\n   27  		data 		: $('#accountacess').serialize(),\n   28: 		url 		: 'AccountAccess',\n   29  		success 	: function(data){\n   30  			console.log(data);\n\n1 match in 1 file\n",
-			"settings":
-			{
-				"buffer_size": 299,
-				"line_ending": "Windows",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
-			"file": "application/views/page/login/lg/js/lg.js",
-			"settings":
-			{
-				"buffer_size": 1040,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "application/config/constants.php",
-			"settings":
-			{
-				"buffer_size": 2203,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "application/language/es/spanish_lang.php",
-			"settings":
-			{
-				"buffer_size": 1322,
+				"buffer_size": 840,
 				"line_ending": "Windows"
 			}
 		},
@@ -289,8 +251,49 @@
 			"file": "statics/css/theme.css",
 			"settings":
 			{
-				"buffer_size": 3916,
+				"buffer_size": 3966,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "statics/css/Thematica.css",
+			"settings":
+			{
+				"buffer_size": 1679,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/views/page/Home/hm/js/hm.js",
+			"settings":
+			{
+				"buffer_size": 682,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "statics/js_lib/fancyscript.js",
+			"settings":
+			{
+				"buffer_size": 2333,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "statics/js/allscript.js",
+			"settings":
+			{
+				"buffer_size": 377,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "statics/js_lib/jQuery.slider.jG.js",
+			"settings":
+			{
+				"buffer_size": 4868,
+				"line_ending": "Windows",
+				"name": "slider.js"
 			}
 		}
 	],
@@ -500,29 +503,53 @@
 	},
 	"file_history":
 	[
-		"/C/xampp/htdocs/abjweb/application/views/page/newaccount/pasotres/css/pasotres.css",
-		"/C/xampp/htdocs/abjweb/application/config/config.php",
-		"/C/xampp/htdocs/abjweb/application/config/foreign_chars.php",
+		"/C/xampp/htdocs/abjweb/application/views/template/theme/header.php",
+		"/C/xampp/htdocs/abjweb/statics/js_lib/login.js",
+		"/C/xampp/htdocs/abjweb/statics/css/login.css",
+		"/C/xampp/htdocs/abjweb/application/controllers/Login.php",
 		"/C/xampp/htdocs/abjweb/application/controllers/LoginUserAccess.php",
 		"/C/xampp/htdocs/abjweb/application/libraries/lbl_Html_Compact.php",
-		"/C/xampp/htdocs/abjweb/application/config/routes.php",
-		"/C/xampp/htdocs/abjweb/application/views/template/vista/template.php",
 		"/C/xampp/htdocs/abjweb/statics/css/Thematica.css",
+		"/C/xampp/htdocs/abjweb/application/controllers/Home.php",
+		"/C/xampp/htdocs/abjweb/application/views/template/vista/footer.php",
+		"/C/xampp/htdocs/abjweb/statics/css/theme.css",
+		"/C/xampp/htdocs/abjweb/application/config/constants.php",
+		"/C/xampp/htdocs/abjweb/application/config/config.php",
+		"/C/xampp/htdocs/abjweb/application/config/foreign_chars.php",
 		"/C/xampp/htdocs/abjweb/application/views/template/vista/header.php",
 		"/C/xampp/htdocs/abjweb/application/views/template/fancy/header.php",
-		"/C/xampp/htdocs/abjweb/application/views/page/Home/hm/hm.php",
+		"/C/xampp/htdocs/abjweb/statics/js_lib/bootstrap/bootstrap-select.min.js",
+		"/C/xampp/htdocs/abjweb/statics/js_lib/bootstrap/bootstrap-select.js",
 		"/C/xampp/htdocs/abjweb/application/views/page/newaccount/pasotres/js/pasotres.js",
+		"/C/xampp/htdocs/abjweb/application/views/page/newaccount/pasouno/js/pasouno.js",
+		"/C/xampp/htdocs/abjweb/application/views/page/newaccount/pasodos/js/pasodos.js",
+		"/C/xampp/htdocs/abjweb/statics/kui/js/jquery.min.js",
+		"/C/xampp/htdocs/abjweb/statics/js_lib/bootstrap/bootstrap.min.js",
+		"/C/xampp/htdocs/abjweb/application/views/page/newaccount/newac/js/newac.js",
+		"/C/xampp/htdocs/abjweb/application/views/page/nosotros/ns/js/ns.js",
+		"/C/xampp/htdocs/abjweb/application/views/page/mas/ms/js/ms.js",
+		"/C/xampp/htdocs/abjweb/application/views/page/login/lg/js/lg.js",
+		"/C/xampp/htdocs/abjweb/application/views/page/Home/hm/js/hm.js",
+		"/C/xampp/htdocs/abjweb/application/views/page/fotos/ft/js/ft.js",
+		"/C/xampp/htdocs/abjweb/application/views/page/cursos/cs/js/cs.js",
+		"/C/xampp/htdocs/abjweb/application/views/page/contactenos/ct/js/ct.js",
+		"/C/xampp/htdocs/abjweb/application/views/page/actividades/ac/js/ac.js",
+		"/C/xampp/htdocs/abjweb/statics/js_lib/bootstrap/bootstrap.js",
+		"/C/xampp/htdocs/abjweb/statics/js_lib/fancyscript.js",
+		"/C/xampp/htdocs/abjweb/.htaccess",
+		"/C/xampp/htdocs/abjweb/application/language/es/spanish_lang.php",
+		"/C/xampp/htdocs/abjweb/application/models/m_UserLogin.php",
+		"/C/xampp/htdocs/abjweb/application/views/template/theme/template.php",
+		"/C/xampp/htdocs/abjweb/application/views/page/newaccount/pasotres/css/pasotres.css",
+		"/C/xampp/htdocs/abjweb/application/config/routes.php",
+		"/C/xampp/htdocs/abjweb/application/views/template/vista/template.php",
+		"/C/xampp/htdocs/abjweb/application/views/page/Home/hm/hm.php",
 		"/C/xampp/htdocs/abjweb/application/views/page/newaccount/pasotres/pasotres.php",
 		"/C/xampp/htdocs/abjweb/application/models/m_Cursos.php",
-		"/C/xampp/htdocs/abjweb/application/models/m_UserLogin.php",
 		"/C/xampp/htdocs/abjweb/application/views/page/newaccount/pasouno/pasouno.php",
-		"/C/xampp/htdocs/abjweb/application/views/page/newaccount/newac/js/newac.js",
-		"/C/xampp/htdocs/abjweb/application/views/page/newaccount/pasouno/js/pasouno.js",
 		"/C/xampp/htdocs/abjweb/application/views/page/newaccount/pasodos/pasodos.php",
-		"/C/xampp/htdocs/abjweb/application/controllers/Login.php",
 		"/C/xampp/htdocs/abjweb/application/core/MY_Model.php",
 		"/C/xampp/htdocs/abjweb/application/views/page/newaccount/pasodos/css/pasodos.css",
-		"/C/xampp/htdocs/abjweb/application/views/page/newaccount/pasodos/js/pasodos.js",
 		"/C/xampp/htdocs/abjweb/statics/css_lib/bootstrap/bootstrap-responsive.css",
 		"/C/xampp/htdocs/abjweb/statics/kui/js/kendo.treeview.min.js",
 		"/C/xampp/htdocs/abjweb/system/libraries/Trackback.php",
@@ -534,18 +561,9 @@
 		"/C/xampp/htdocs/abjweb/application/views/page/newaccount/pasouno/css/pasouno.css",
 		"/C/xampp/htdocs/abjweb/statics/img/updater-script",
 		"/C/xampp/htdocs/abjweb/application/views/page/newaccount/newac/css/newac.css",
-		"/C/xampp/htdocs/abjweb/statics/js_lib/login.js",
-		"/C/xampp/htdocs/abjweb/statics/css/login.css",
 		"/C/xampp/htdocs/abjweb/statics/css/normalstyle.css",
-		"/C/xampp/htdocs/abjweb/application/language/es/spanish_lang.php",
 		"/C/xampp/htdocs/abjweb/application/models/m_Supervisor.php",
 		"/C/xampp/htdocs/abjweb/application/controllers/LandingPage.php",
-		"/C/xampp/htdocs/abjweb/statics/js_lib/fancyscript.js",
-		"/C/xampp/htdocs/abjweb/application/views/page/login/lg/js/lg.js",
-		"/C/xampp/htdocs/abjweb/application/controllers/Home.php",
-		"/C/xampp/htdocs/abjweb/application/views/template/vista/footer.php",
-		"/C/xampp/htdocs/abjweb/statics/css/theme.css",
-		"/C/xampp/htdocs/abjweb/application/config/constants.php",
 		"/C/xampp/htdocs/abjweb/statics/js_lib/pluginscam/sAS3Cam.as",
 		"/C/xampp/htdocs/abjweb/system/libraries/Pagination.php",
 		"/C/xampp/htdocs/abjweb/application/config/profiler.php",
@@ -554,8 +572,6 @@
 		"/C/xampp/htdocs/abjweb/system/helpers/language_helper.php",
 		"/C/xampp/htdocs/abjweb/system/core/Lang.php",
 		"/F/foto/index.php",
-		"/C/xampp/htdocs/abjweb/application/views/template/theme/header.php",
-		"/C/xampp/htdocs/abjweb/application/views/template/theme/template.php",
 		"/C/xampp/htdocs/abjweb/application/views/template/theme/footer.php",
 		"/C/xampp/htdocs/abjweb/statics/css/BackgroundsTheme.css",
 		"/C/xampp/htdocs/abjweb/application/controllers/Nosotros.php",
@@ -578,7 +594,6 @@
 		"/C/xampp/htdocs/abjweb/system/helpers/captcha_helper.php",
 		"/C/xampp/htdocs/abjweb/system/language/english/date_lang.php",
 		"/C/xampp/htdocs/abjweb/system/language/english/db_lang.php",
-		"/C/xampp/htdocs/abjweb/.htaccess",
 		"/D/DISCO D (datos)/mi usb AAAAAAAAAAa/B/Developer/Proyecto Page/page/application/controllers/Home.php",
 		"/D/DISCO D (datos)/mi usb AAAAAAAAAAa/B/Developer/Proyecto Page/page/application/controllers/Deportistas.php",
 		"/C/xampp/htdocs/abjweb/system/core/Router.php",
@@ -615,19 +630,7 @@
 		"/C/xampp/htdocs/abjweb/application/views/fancybox/f_login_v.php",
 		"/C/xampp/htdocs/abjweb/application/controllers/Fotos.php",
 		"/C/xampp/htdocs/abjweb/application/controllers/Cursos.php",
-		"/C/xampp/htdocs/abjweb/application/controllers/Contactenos.php",
-		"/C/xampp/htdocs/abjweb/application/controllers/Actividades.php",
-		"/C/xampp/htdocs/abjweb/application/controllers/Mas.php",
-		"/C/xampp/htdocs/abjweb/application/config/hooks.php",
-		"/C/xampp/htdocs/abjweb/system/language/english/calendar_lang.php",
-		"/C/xampp/htdocs/abjweb/system/libraries/Javascript.php",
-		"/C/xampp/htdocs/abjweb/system/libraries/javascript/Jquery.php",
-		"/C/xampp/htdocs/abjweb/statics/js_lib/easing/jquery.easing.1.3.js",
-		"/C/xampp/htdocs/abjweb/statics/js_lib/bootstrap/bootstrap-select.min.js",
-		"/C/xampp/htdocs/abjweb/statics/js_lib/bootstrap/bootstrap-select.js",
-		"/C/xampp/htdocs/abjweb/application/views/page/nosotros/ns/js/ns.js",
-		"/C/xampp/htdocs/abjweb/application/views/page/mas/ms/js/ms.js",
-		"/C/xampp/htdocs/abjweb/application/views/page/Home/hm/js/hm.js"
+		"/C/xampp/htdocs/abjweb/application/controllers/Contactenos.php"
 	],
 	"find":
 	{
@@ -638,6 +641,8 @@
 		"height": 90.0,
 		"where_history":
 		[
+			"",
+			"*.css",
 			"*.js",
 			"",
 			"Z:\\application",
@@ -666,6 +671,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"panel_fancy",
+			"easi",
+			"#ingresar",
+			"ingresar",
+			"#ingresar",
+			"slide",
+			"rasgadoL",
 			"AccountAccess",
 			",?",
 			"live(",
@@ -786,14 +798,7 @@
 			"class=\"presentacion_p",
 			"`",
 			"SQL_ZonasProyectadasconMonto",
-			"SQL_SELECT_ListarProductosDeUnMes",
-			"SQL_SELECT_ListarProductosDeUnMesenUnaProyeccion",
-			"SQL_ZonasProyectadasconMonto",
-			"SQL_ZonaProyectadaconMonto",
-			"SQL_SELECT_DetallesdeMesdeunaProyeccion",
-			"SP_SELECT_GananciadeVentasxMesdeUnaZona",
-			"SQL_SELECT_DetallesdeMesdeunaProyeccion",
-			"SP_SELECT_GanaciadeVentasxMesdeUnaZona"
+			"SQL_SELECT_ListarProductosDeUnMes"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -823,31 +828,30 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "application/controllers/Login.php",
+					"file": "application/views/template/theme/header.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 20645,
+						"buffer_size": 2626,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8274,
-								8274
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -858,19 +862,19 @@
 				},
 				{
 					"buffer": 1,
-					"file": "application/models/m_UserLogin.php",
+					"file": "application/views/page/Home/hm/hm.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2679,
+						"buffer_size": 840,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2584,
-								2584
+								167,
+								167
 							]
 						],
 						"settings":
@@ -879,132 +883,113 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 980.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "application/controllers/Home.php",
+					"file": "statics/css/theme.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1743,
+						"buffer_size": 3966,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1743,
-								1743
+								3097,
+								3097
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 378.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "application/views/template/theme/template.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3480,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								792,
-								792
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 126.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 299,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										199,
-										212
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								207,
-								207
-							]
-						],
-						"settings":
-						{
-							"detect_indentation": false,
-							"line_numbers": false,
-							"output_tag": 1,
-							"result_base_dir": "",
-							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2859.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "application/views/page/login/lg/js/lg.js",
+					"buffer": 3,
+					"file": "statics/css/Thematica.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1040,
+						"buffer_size": 1679,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								672,
-								672
+								1679,
+								1679
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1173.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "application/views/page/Home/hm/js/hm.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 682,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								682,
+								682
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": -0.0,
+						"translation.y": 42.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "statics/js_lib/fancyscript.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2333,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1103,
+								1103
 							]
 						],
 						"settings":
@@ -1012,36 +997,8 @@
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 227.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "application/config/constants.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2203,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1946,
-								1955
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": -0.0,
-						"translation.y": 378.0,
+						"translation.x": 161.0,
+						"translation.y": 151.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
@@ -1054,60 +1011,60 @@
 			"sheets":
 			[
 				{
-					"buffer": 7,
-					"file": "application/language/es/spanish_lang.php",
+					"buffer": 6,
+					"file": "statics/js/allscript.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1322,
+						"buffer_size": 377,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								72,
-								72
+								195,
+								195
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "statics/css/theme.css",
+					"buffer": 7,
+					"file": "statics/js_lib/jQuery.slider.jG.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3916,
+						"buffer_size": 4868,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2622,
-								2622
+								3977,
+								3977
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"auto_name": "slider.js",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2163.0,
+						"translation.y": 1890.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1175,20 +1132,12 @@
 		"selected_items":
 		[
 			[
-				"constants",
-				"application\\config\\constants.php"
-			],
-			[
 				"login",
-				"application\\controllers\\Login.php"
+				"statics\\js_lib\\login.js"
 			],
 			[
-				"routes",
-				"application\\config\\routes.php"
-			],
-			[
-				"template",
-				"application\\views\\template\\theme\\template.php"
+				"hm.js",
+				"application\\views\\page\\Home\\hm\\js\\hm.js"
 			],
 			[
 				"hm.php",
@@ -1197,6 +1146,26 @@
 			[
 				"home",
 				"application\\controllers\\Home.php"
+			],
+			[
+				"constants",
+				"application\\config\\constants.php"
+			],
+			[
+				"header",
+				"application\\views\\template\\theme\\header.php"
+			],
+			[
+				"theme.css",
+				"statics\\css\\theme.css"
+			],
+			[
+				"routes",
+				"application\\config\\routes.php"
+			],
+			[
+				"template",
+				"application\\views\\template\\theme\\template.php"
 			],
 			[
 				"pasodo",
@@ -1253,10 +1222,6 @@
 			[
 				"lang",
 				"application\\language\\es\\spanish_lang.php"
-			],
-			[
-				"header",
-				"application\\views\\template\\vista\\header.php"
 			],
 			[
 				"theme",

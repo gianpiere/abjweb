@@ -13,6 +13,7 @@
 		next 					: true,
 		back 					: true,
 		points 					: true,
+		clickedpoint			: true,
 		betweentime				: 7000,			// 1s
 		aleatories				: false,
 		efects					: true,
@@ -83,27 +84,21 @@
 		$($items.children('i').get(i)).addClass('onfocus').removeClass('nofocus');
 	}
 
-	jQuery.fn.webslider = function(options){ $this = $(this);
-		o = $.extend({},defaults,options);
-		var $data = (o.DataSource || undefined); DataSource = $data;
+	function ReiniciarSlider(options){
+		detenerSlider('');
+		SliderInit('');
+	}
 
-		if($data != undefined){
-			opt.count = $data.length -1;
-			(o.init >= opt.count) ? opt.position = o.init -1 : opt.position = 0;
+	function detenerSlider(options){
+		clearInterval(sliderProcess);
+	}
 
-			$controls = $this.children('.controls');
-			$items = $controls.children('.slideposition');
+	function pausarSlider(options){
+		clearInterval(sliderProcess);
+	}
 
-			for (var i = 0; i <= $data.length -1; i++) {
-				var focus = (i == opt.position ? 'onfocus' : 'nofocus');
-				var item = '<i class="'+focus+'" data-position="'+String(i+1)+'"></i>';
-				$items.append(item);
-			};
-
-			// iniciamos
-			slideView(opt.position);
-
-			// continuamos con el intervalo
+	function SliderInit(options){
+		// Iniciar Intervalo
 			sliderProcess = setInterval(function(){
 
 				// validar loop 
@@ -122,6 +117,42 @@
 				slideView(opt.position);
 
 			},o.betweentime);
+	}
+
+	jQuery.fn.webslider = function(options){ $this = $(this);
+		o = $.extend({},defaults,options);
+		var $data = (o.DataSource || undefined); DataSource = $data;
+
+		if($data != undefined){
+			opt.count = $data.length -1;
+			(o.init >= opt.count) ? opt.position = o.init -1 : opt.position = 0;
+
+			$controls = $this.children('.controls');
+			$items = $controls.children('.slideposition');
+
+			for (var i = 0; i <= $data.length -1; i++){
+				var focus = (i == opt.position ? 'onfocus' : 'nofocus');
+				var item = '<i class="'+focus+'" data-position="'+String(i+1)+'"></i>';
+				$items.append(item);
+			};
+
+			if(o.clickedpoint){
+				$items.children('i').on('click',function(e){ $this = $(this);
+					var $p = parseInt(parseInt($this.attr('data-position')) - 1) || 0;
+					detenerSlider('');
+					opt.position = $p;
+					SliderInit('');
+				});
+
+				// iniciar
+				slideView(opt.position);
+			}
+
+			// iniciamos
+			slideView(opt.position);
+
+			// continuamos con el intervalo
+			SliderInit('');
 		}
 	}
 

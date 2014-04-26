@@ -37,7 +37,7 @@
 		
 		<section class="panel access">
 			<div class="left logohome">
-				<a href="#Home"><img src="<?=IMG;?>logo/logosuperior.png" width="100%" height="auto" /></a>
+				<a href="Home"><img src="<?=IMG;?>logo/logosuperior.png" width="100%" height="auto" /></a>
 			</div>
 			<!-- aqui el devocional y el menu -->
 			<div class="devocional left">
