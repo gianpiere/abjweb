@@ -38,7 +38,8 @@ define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 
 
 # Definimos las Constantes del Proyecto 
-define('BASE_PATH', 'http://192.168.1.177/abjweb/');
+define('DOMAIN','localhost');
+define('BASE_PATH', 'http://'.DOMAIN.'/abjweb/');
 # define('BASE_PATH', 'http://localhost/abjweb/');
 define('KENDO',BASE_PATH.'statics/kui/');
 define('CSS', BASE_PATH.'statics/css/');
@@ -53,5 +54,8 @@ define('UPLOAD',BASE_PATH.'statics/upload/');
 # Caracteres especiales
 define("LATIN1_UC_CHARS", "ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝ");
 define("LATIN1_LC_CHARS", "àáâãäåæçèéêëìíîïðñòóôõöøùúûüý");
+
+# Direcciones Redes Sociales
+define('FACEBOOK','https://www.facebook.com/abjlosolivos');
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */

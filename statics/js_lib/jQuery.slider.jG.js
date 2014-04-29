@@ -85,12 +85,14 @@
 	}
 
 	function ReiniciarSlider(options){
-		detenerSlider('');
-		SliderInit('');
+		$.when(detenerSlider('')).then(function(){
+			SliderInit('');
+		});
 	}
 
 	function detenerSlider(options){
 		clearInterval(sliderProcess);
+		return true;
 	}
 
 	function pausarSlider(options){
@@ -138,10 +140,8 @@
 
 			if(o.clickedpoint){
 				$items.children('i').on('click',function(e){ $this = $(this);
-					var $p = parseInt(parseInt($this.attr('data-position')) - 1) || 0;
-					detenerSlider('');
-					opt.position = $p;
-					SliderInit('');
+					opt.position = $this.attr('data-position') - 1;
+					console.log(opt.position);
 				});
 
 				// iniciar

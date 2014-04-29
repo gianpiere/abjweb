@@ -6,7 +6,7 @@
 <body>
 	<div class="inicialheader">
 	<div class="content socialplugins">
-		<a href="#"><button class="lnkfacebook"></button></a>
+		<a href="<?=FACEBOOK;?>" target="blank"><button class="lnkfacebook"></button></a>
 		<?php # load user session
 			$usToken = $this->session->userdata('UsuarioToken');
 			$usPName = $this->session->userdata('UsuarioPrimerNombre');

@@ -15,7 +15,8 @@
 |
 */
 # $config['base_url']	= 'http://localhost/abjweb/';
-$config['base_url']	= 'http://192.168.1.177/abjweb/';
+#$config['base_url']	= 'http://192.168.1.177/abjweb/';
+$config['base_url']	= BASE_PATH;
 
 /*
 |--------------------------------------------------------------------------

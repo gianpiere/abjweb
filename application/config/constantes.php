@@ -1,6 +1,6 @@
 <?php
-define('BASE_PATH', 'http://192.168.1.177/abjweb');
-#define('BASE_PATH', 'http://localhost/abjweb');
+define('DOMAIN','localhost');
+define('BASE_PATH', 'http://'.DOMAIN.'/abjweb/');
 define('CSS', BASE_PATH.'statics/css/');
 define('CSS_LIB', BASE_PATH.'statics/css_lib/');
 define('JS', BASE_PATH.'statics/js/');
