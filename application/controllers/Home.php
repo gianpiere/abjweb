@@ -44,6 +44,13 @@ class Home extends MY_Controller{
             );
         endif;
 
+        $this->load->model('m_fotos');
+        $imagenHome = $this->m_fotos->SP_ftw_ImagenWebTipo('COD00000002');
+        if(isset($imagenHome) && !empty($imagenHome)):
+            $this->imagenHome = $imagenHome;
+            echo json_encode($imagenHome);
+        endif;
+
         $this->focus = 'home';
         $this->Theme('page/Home/hm/','hm.php');
     }
