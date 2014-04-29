@@ -48,6 +48,13 @@ class Fotos extends MY_Controller{
         $this->Theme('page/fotos/ft/','ft.php');
     }
 
+    public function TomarFotoPerfil(){
+        $this->css = array();
+        $this->js  = array();
+        $pathmask = 'page/tomarfoto/tf/';
+        $this->fancy('page/tomarfoto/tf/tf',$pathmask);
+    }
+
 
 }
 

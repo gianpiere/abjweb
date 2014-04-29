@@ -20,6 +20,7 @@
                 <div id="foto" class="inp_foto">
                     <input id="b64_foto" type="hidden" value="" />
                     <i class="iconfotofile"><input type="file" id="slfile" /></i>
+                    <i id="tomarfoto" class="tomarfoto">Tomar una Foto</i>
                 </div>
 
                 <div class="fl ml20">
@@ -203,6 +204,17 @@
 
           dropZone.addEventListener('drop', puente, false);
         // -> desde aqui empieza el codigo del plugin 
+
+
+
+
+
+
+
+        // Tomar una Foto
+        $('#tomarfoto').on('click',function(){
+            $('#tomarfoto').fancyblack({url:'../../TomarFoto'});
+        });
 
 
     });

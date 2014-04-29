@@ -38,7 +38,8 @@ define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 
 
 # Definimos las Constantes del Proyecto 
-define('BASE_PATH', 'http://localhost/abjweb/');
+define('BASE_PATH', 'http://192.168.1.177/abjweb/');
+# define('BASE_PATH', 'http://localhost/abjweb/');
 define('KENDO',BASE_PATH.'statics/kui/');
 define('CSS', BASE_PATH.'statics/css/');
 define('CSS_LIB', BASE_PATH.'statics/css_lib/');

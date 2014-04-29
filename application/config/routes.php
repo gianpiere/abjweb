@@ -58,6 +58,8 @@ $route['Account/LandingPage'] 				= 'Login/LandingPageUser';
 $route['Account/paso']						= 'Login/Pasos';
 $route['Account/paso/(:num)']				= 'Login/Pasos/$1';
 
+$route['TomarFoto']							= 'Fotos/TomarFotoPerfil';
+
 
 //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::GRB://
 

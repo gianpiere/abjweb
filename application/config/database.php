@@ -10,6 +10,7 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
+# $db['default']['hostname'] = 'localhost';
 $db['default']['port']	   = '';
 $db['default']['username'] = 'abjuser';
 $db['default']['password'] = '7bcs7xCr1sT0';

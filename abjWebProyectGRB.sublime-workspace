@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
 				"data",
 				"data-position"
 			],
@@ -14,10 +22,6 @@
 			[
 				"rasg",
 				"rasgadoL"
-			],
-			[
-				"mar",
-				"margin-left"
 			],
 			[
 				"str_re",
@@ -38,10 +42,6 @@
 			[
 				"js",
 				"json_encode"
-			],
-			[
-				"max",
-				"max-height"
 			],
 			[
 				"c",
@@ -243,8 +243,42 @@
 			"file": "application/views/page/Home/hm/hm.php",
 			"settings":
 			{
-				"buffer_size": 840,
+				"buffer_size": 841,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Searching 769 files for \"inp_foto\"\n\nC:\\xampp\\htdocs\\abjweb\\application\\views\\page\\newaccount\\newac\\newac.php:\n   29  			<div class=\"p4 color_6\">Informacion importante</div>\n   30  \n   31: 			<div class=\"inp_foto\"></div>\n   32  \n   33  			<div class=\"p4 color_7\">sexo:</div>\n\nC:\\xampp\\htdocs\\abjweb\\application\\views\\page\\newaccount\\newac\\css\\newac.css:\n  138  }\n  139  \n  140: .inp_foto{\n  141  	height: 140px;\n  142  	width: 140px;\n\nC:\\xampp\\htdocs\\abjweb\\application\\views\\page\\newaccount\\pasodos\\pasodos.php:\n   15  				<div class=\"p4 color_6\">Informacion importante</div>\n   16  \n   17: 				<div id=\"foto\" class=\"inp_foto\">\n   18  					<input id=\"b64_foto\" type=\"hidden\" value=\"\" />\n   19  					<input type=\"file\" style=\"display:none;\" />\n\nC:\\xampp\\htdocs\\abjweb\\application\\views\\page\\newaccount\\pasodos\\css\\pasodos.css:\n  158  }\n  159  \n  160: .inp_foto{\n  161  	height: 140px;\n  162  	width: 140px;\n\nC:\\xampp\\htdocs\\abjweb\\application\\views\\page\\newaccount\\pasotres\\css\\pasotres.css:\n  174  }\n  175  \n  176: .inp_foto{\n  177  	height: 140px;\n  178  	width: 140px;\n\n5 matches across 5 files\n\n\nSearching 1 file for \"inp_foto\"\n\nC:\\xampp\\htdocs\\abjweb\\application\\views\\page\\newaccount\\pasodos\\css\\pasodos.css:\n  158  }\n  159  \n  160: .inp_foto{\n  161  	height: 140px;\n  162  	width: 140px;\n\n1 match in 1 file\n",
+			"settings":
+			{
+				"buffer_size": 1313,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "application/views/page/newaccount/pasodos/pasodos.php",
+			"settings":
+			{
+				"buffer_size": 7177,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/config/database.php",
+			"settings":
+			{
+				"buffer_size": 768,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/config/constants.php",
+			"settings":
+			{
+				"buffer_size": 2203,
+				"line_ending": "Unix"
 			}
 		},
 		{
@@ -276,6 +310,14 @@
 			"settings":
 			{
 				"buffer_size": 2333,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/views/page/newaccount/pasodos/css/pasodos.css",
+			"settings":
+			{
+				"buffer_size": 3216,
 				"line_ending": "Windows"
 			}
 		},
@@ -503,6 +545,14 @@
 	},
 	"file_history":
 	[
+		"/C/xampp/htdocs/abjweb/application/config/config.php",
+		"/C/xampp/htdocs/abjweb/application/config/foreign_chars.php",
+		"/C/Users/Gianpiere/Documents/jGianpiere st3/Data/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Gianpiere/Documents/jGianpiere st3/Data/Packages/Default/Default (Windows).sublime-keymap",
+		"/D/Escritorio/Gianpiere/page/application/libraries/UpladFotosGangper.php",
+		"/D/Escritorio/Gianpiere/page/application/libraries/MY_sPlantillas.php",
+		"/D/Escritorio/Gianpiere/page/application/libraries/Uploadify_max.php",
+		"/C/xampp/htdocs/abjweb/application/views/template/theme/template.php",
 		"/C/xampp/htdocs/abjweb/application/views/template/theme/header.php",
 		"/C/xampp/htdocs/abjweb/statics/js_lib/login.js",
 		"/C/xampp/htdocs/abjweb/statics/css/login.css",
@@ -514,8 +564,6 @@
 		"/C/xampp/htdocs/abjweb/application/views/template/vista/footer.php",
 		"/C/xampp/htdocs/abjweb/statics/css/theme.css",
 		"/C/xampp/htdocs/abjweb/application/config/constants.php",
-		"/C/xampp/htdocs/abjweb/application/config/config.php",
-		"/C/xampp/htdocs/abjweb/application/config/foreign_chars.php",
 		"/C/xampp/htdocs/abjweb/application/views/template/vista/header.php",
 		"/C/xampp/htdocs/abjweb/application/views/template/fancy/header.php",
 		"/C/xampp/htdocs/abjweb/statics/js_lib/bootstrap/bootstrap-select.min.js",
@@ -539,7 +587,6 @@
 		"/C/xampp/htdocs/abjweb/.htaccess",
 		"/C/xampp/htdocs/abjweb/application/language/es/spanish_lang.php",
 		"/C/xampp/htdocs/abjweb/application/models/m_UserLogin.php",
-		"/C/xampp/htdocs/abjweb/application/views/template/theme/template.php",
 		"/C/xampp/htdocs/abjweb/application/views/page/newaccount/pasotres/css/pasotres.css",
 		"/C/xampp/htdocs/abjweb/application/config/routes.php",
 		"/C/xampp/htdocs/abjweb/application/views/template/vista/template.php",
@@ -618,9 +665,6 @@
 		"/D/Escritorio/HtDOCS/application/core/MY_Controller.php",
 		"/D/Escritorio/MI USB RECICLER/programs/page2/application/controllers/Galeria.php",
 		"/D/Escritorio/MI USB RECICLER/programs/page2/application/libraries/UpladFotosGangper.php",
-		"/D/Escritorio/Gianpiere/page/application/libraries/Uploadify_max.php",
-		"/D/Escritorio/Gianpiere/page/application/libraries/MY_sPlantillas.php",
-		"/D/Escritorio/Gianpiere/page/application/libraries/UpladFotosGangper.php",
 		"/D/Escritorio/Gianpiere/page/application/helpers/GangperClass_helper.php",
 		"/C/xampp/htdocs/abjweb/application/controllers/EmailSend.php",
 		"/G/Developer/ApacheServer/htdocs/bk31122013_abjlosolivos/application/controllers/Registro.php",
@@ -628,9 +672,7 @@
 		"/C/xampp/htdocs/abjweb/application/views/page/login/lg/css/lg.css",
 		"/C/xampp/htdocs/abjweb/application/logs/index.html",
 		"/C/xampp/htdocs/abjweb/application/views/fancybox/f_login_v.php",
-		"/C/xampp/htdocs/abjweb/application/controllers/Fotos.php",
-		"/C/xampp/htdocs/abjweb/application/controllers/Cursos.php",
-		"/C/xampp/htdocs/abjweb/application/controllers/Contactenos.php"
+		"/C/xampp/htdocs/abjweb/application/controllers/Fotos.php"
 	],
 	"find":
 	{
@@ -641,6 +683,7 @@
 		"height": 90.0,
 		"where_history":
 		[
+			"*dos.css",
 			"",
 			"*.css",
 			"*.js",
@@ -671,6 +714,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"HiddenListArr",
+			"message_loading",
+			"#foto",
+			"inp_foto",
+			"#Home",
 			"panel_fancy",
 			"easi",
 			"#ingresar",
@@ -793,12 +841,7 @@
 			"proyectionsdetailszone.php",
 			"Diagrama de Proyeccion de Zona",
 			"peticion_pendienteaprobacion",
-			"<button>Aprobar</button>",
-			"allproyectionsmesdetails",
-			"class=\"presentacion_p",
-			"`",
-			"SQL_ZonasProyectadasconMonto",
-			"SQL_SELECT_ListarProductosDeUnMes"
+			"<button>Aprobar</button>"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -828,7 +871,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -857,7 +900,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
@@ -866,15 +909,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 840,
+						"buffer_size": 841,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								167,
-								167
+								841,
+								841
 							]
 						],
 						"settings":
@@ -886,11 +929,176 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1313,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										203,
+										211
+									],
+									[
+										378,
+										386
+									],
+									[
+										617,
+										625
+									],
+									[
+										851,
+										859
+									],
+									[
+										1016,
+										1024
+									],
+									[
+										1239,
+										1247
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								1313,
+								1313
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 2,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 546.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "application/views/page/newaccount/pasodos/pasodos.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7177,
+						"regions":
+						{
+							"bookmarks":
+							{
+								"flags": 144,
+								"icon": "bookmark",
+								"regions":
+								[
+									[
+										5423,
+										5423
+									]
+								],
+								"scope": "bookmarks"
+							}
+						},
+						"selection":
+						[
+							[
+								5380,
+								5380
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1890.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "application/config/database.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 768,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								767,
+								767
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "application/config/constants.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2203,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1084,
+								1084
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": -0.0,
+						"translation.y": 126.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
 					"file": "statics/css/theme.css",
 					"semi_transient": false,
 					"settings":
@@ -915,11 +1123,11 @@
 						"translation.y": 2859.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 7,
 					"file": "statics/css/Thematica.css",
 					"semi_transient": false,
 					"settings":
@@ -944,11 +1152,11 @@
 						"translation.y": 1173.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 8,
 					"file": "application/views/page/Home/hm/js/hm.js",
 					"semi_transient": false,
 					"settings":
@@ -972,11 +1180,11 @@
 						"translation.y": 42.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 9,
 					"file": "statics/js_lib/fancyscript.js",
 					"semi_transient": false,
 					"settings":
@@ -1001,17 +1209,46 @@
 						"translation.y": 151.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 9,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
-					"buffer": 6,
+					"buffer": 10,
+					"file": "application/views/page/newaccount/pasodos/css/pasodos.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3216,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2494,
+								2494
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2715.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
 					"file": "statics/js/allscript.js",
 					"semi_transient": false,
 					"settings":
@@ -1035,11 +1272,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 12,
 					"file": "statics/js_lib/jQuery.slider.jG.js",
 					"semi_transient": false,
 					"settings":
@@ -1051,8 +1288,8 @@
 						"selection":
 						[
 							[
-								3977,
-								3977
+								3948,
+								3948
 							]
 						],
 						"settings":
@@ -1064,7 +1301,7 @@
 						"translation.y": 1890.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
@@ -1132,6 +1369,14 @@
 		"selected_items":
 		[
 			[
+				"constants",
+				"application\\config\\constants.php"
+			],
+			[
+				"database",
+				"application\\config\\database.php"
+			],
+			[
 				"login",
 				"statics\\js_lib\\login.js"
 			],
@@ -1146,10 +1391,6 @@
 			[
 				"home",
 				"application\\controllers\\Home.php"
-			],
-			[
-				"constants",
-				"application\\config\\constants.php"
 			],
 			[
 				"header",
@@ -1333,10 +1574,6 @@
 			],
 			[
 				"databa",
-				"application\\config\\database.php"
-			],
-			[
-				"database",
 				"application\\config\\database.php"
 			],
 			[
