@@ -11,8 +11,25 @@
 </section>
 <section class="content mt20">
         <section class="cropfoto" id="cropfoto">
-            <img id="fotorecorte" src="">
+            <img id="fotorecorte" src="" style="display:none;">
         </section>
+
+        <style type="text/css">
+            #CapturarFoto{
+                height: 40px;
+                width: auto;
+                padding: 4px;
+                text-align: center;
+                border:none;
+                background: #83ba51;
+                color: white;
+                text-transform: uppercase;
+                margin: 7px;
+                cursor: pointer;
+            }
+        </style>
+        <button id="CapturarFoto" style="display:block;">Tomar Foto</button>
+
         <section class="panel_dos bgcolor_1 fl ml7">
             <form id="frm_datosper" action="" name="frm_datosper" method="post">
                 <div class="p4 color_6">Informacion importante</div>
@@ -20,7 +37,6 @@
                 <div id="foto" class="inp_foto">
                     <input id="b64_foto" type="hidden" value="" />
                     <i class="iconfotofile"><input type="file" id="slfile" /></i>
-                    <i id="tomarfoto" class="tomarfoto">Tomar una Foto</i>
                 </div>
 
                 <div class="fl ml20">
@@ -57,6 +73,59 @@
 		left:-100px;
 	}
 </style>
+<div id="existecamara" style="display:block; height:0px; width:0px; opacity:0; visible:none; position:absolute; top:-1px; overflow:hidden;" ></div>
+<script type="text/javascript">
+    var camapiuno = null;
+    $(document).ready(function() {
+        // iniciar Api
+        $("#existecamara").webcam({
+            swffile: "<?=JS_LIB;?>/pluginscam/sAS3Cam.swf?v=" + Math.random(),
+            previewWidth: 1,
+            previewHeight: 1,
+            resolutionWidth: 1,
+            resolutionHeight: 1,
+            StageScaleMode: 'noScale',
+            StageAlign: 'TL',
+            noCameraFound: function() {
+                this.debug('error', 'No Encontramos ningun dispositivo de camara.');
+                    $('#CapturarFoto').hide(0);
+                    closeModal();
+            },
+            swfApiFail: function(e) {
+                this.debug('error', 'Error Interno al Iniciar la Camara');
+                    $('#CapturarFoto').hide(0);
+                    closeModal();
+            },
+            cameraDisabled: function() {
+                this.debug('error', 'Porfavor Active su Camara para Tomar una Foto');
+                closeModal();
+            },
+            debug: function(type, string) {
+                if (type === 'error') {
+                    //$(".webcam-error").html(string);
+                    console.log(string);
+                }
+            },
+            cameraEnabled: function() {
+                camapiuno = this;
+                closeModal();
+            }
+
+        });
+
+    });
+
+    // funciones fuera del REady
+    function closeModal() {
+        $('#existecamara').html('');
+        if (camapiuno !== null)
+            camapiuno.isCameraEnabled = false;
+    }
+
+    // Tomar una Foto
+    $('#CapturarFoto').fancyblack({url:"<?=BASE_PATH;?>TomarFoto"});
+
+</script>
 
 <script>
 	var fechanac,supervis;
@@ -158,7 +227,7 @@
 
                     $('#fotorecorte').attr('src',
                         e.target.result
-                    );
+                    ).fadeIn(0);
 
                   console.log([theFile.name,e.target.result,theFile.size,theFile]);
 
@@ -204,17 +273,6 @@
 
           dropZone.addEventListener('drop', puente, false);
         // -> desde aqui empieza el codigo del plugin 
-
-
-
-
-
-
-
-        // Tomar una Foto
-        $('#tomarfoto').on('click',function(){
-            $('#tomarfoto').fancyblack({url:'../../TomarFoto'});
-        });
 
 
     });

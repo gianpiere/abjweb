@@ -68,7 +68,7 @@
 		});
 
 		$slbuton 	= $controls.children('a.sld_act');
-		if(!$slider.button[2]){$slbuton.css({display:'none'});}else{$slbuton.show(0);}
+		if(!parseInt($slider.button[2])){$slbuton.css({display:'none'});}else{$slbuton.show(0);}
 		$slbuton.attr('href',$slider.button[1]).children('button').text($slider.button[0]);
 
 		$imagen.children('img').attr('src',$slider.img);
@@ -131,6 +131,7 @@
 
 			$controls = $this.children('.controls');
 			$items = $controls.children('.slideposition');
+			$objtexto = $controls.children('.sliderText');
 
 			for (var i = 0; i <= $data.length -1; i++){
 				var focus = (i == opt.position ? 'onfocus' : 'nofocus');

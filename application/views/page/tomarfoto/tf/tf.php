@@ -1,203 +1,247 @@
-<script type="text/javascript" src="<?=JS_LIB;?>pluginscam/jquery.webcam.as3.js"></script>
+<style type="text/css">
+    .panelfotoperfil{
+        height: 400px;
+        width: 500px;
+        background: white;
+        position: absolute;
+        top: 50%;
+        margin-top: -250px;
+        left: 50%;
+        margin-left: -200px;
+        border:1px solid black; 
+    }
 
+    .panelfotoperfil .header{
+        height: 20px;
+        background: #e9b130;
+        margin-bottom: 10px;
+    }
 
+    #webcam{
+        width:220px; 
+        height: 220px; 
+        background:#646464;
+        margin-left: 16px;
+        float: left;
+    }
 
-<!-- -->
-<div class="box color_light">
-    <div class="modal-header">
-        <button id="button-close" class="close" aria-hidden="true" type="button">×</button>
-        <h4> <i class="icon-book"></i>
-            <span>Tomar Foto</span> 
-        </h4>
+    .panelfotoperfil .controls{
+        width: 200px;
+        height: auto;
+        min-height: 220px;
+        margin-right: 10px;
+    }
+
+    #cameraNames{
+        width:100%;
+        font-size:12px;
+        height:25px;
+    }
+
+    #unicacamara{
+        text-align: center;
+        padding: 5px;
+    }
+
+    #capture_pic{
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        color: white;
+        background: #5799ca;
+        padding: 5px;
+        margin-top: 8px;
+        border:0px;
+    }
+
+    #cerrarv_pic{
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        color: white;
+        background: #e9b130;
+        padding: 5px;
+        margin-top: 8px;
+        border:0px;   
+    }
+
+    .right{float: right;}
+    
+    .footer_f{
+        bottom: 0px;
+        width: 400px;
+        height: 30px;
+        background: url(<?=ICONOS;?>logo30tinf.png) left center no-repeat;
+    }
+
+    #visualiazador{
+        height: 370px;
+        width: 500px;
+        position: relative;
+        background: url(<?=FONDOS;?>bg_fancy_white.png);
+    }
+
+    .cerrar_muestras{
+        margin: 3px 3px 3px 3px; 
+    }
+
+    .picpreview{
+        margin: 4px;
+    }
+
+    .pic128{
+        width: 128px;
+        height: 128px;
+    }
+
+    .pic64{
+        width: 64px;
+        height: 64px;
+    }
+
+    .pic32{
+        width: 32px;
+        height: 32px;
+    }
+
+    .pic24{
+        width: 24px;
+        height: 24px;
+    }
+
+    .picviewcontent{
+        margin-left: 13px; 
+        overflow: auto;
+        float: left;
+        width: 250px;
+        height: 137px;
+    }
+
+    .options_picpreview{
+        width: 200px;
+        height: auto;
+        min-height: 220px;
+        margin-right: 10px;
+    }
+
+    button{
+        cursor: pointer;
+    }
+
+    #aceptar_foto{
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        color: white;
+        background: #83b950;
+        padding: 5px;
+        margin-top: 8px;
+        border:0px;
+    }
+
+    #capturar_nueva_foto{
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        color: white;
+        background: #579aca;
+        padding: 5px;
+        margin-top: 8px;
+        border:0px;
+    }
+
+    #cerrar_foto_camara{
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        color: white;
+        background: #e9b230;
+        padding: 5px;
+        margin-top: 8px;
+        border:0px;
+    }
+</style>
+
+<section class="panelfotoperfil">
+    <div class="header">
+        <input id="txt_imgphoto" type="hidden" value="" />
     </div>
-    <div id='div-content' class="content">
-        <div class="container-fluid">
-            <div class="form-row control-group row-fluid">
-                <label for="normal-field" class="control-label span2">Camaras</label>
-                <div class="controls span4">
-                    <select id="cameraNames" size="1" onChange="changeCamera()" style="width:245px;font-size:10px;height:25px;">
-                    </select>
-                </div>
-            </div>
-            <div class="form-row control-group row-fluid">
-                <div id='webcam' style="width:100%; height: 100%">
-
-
-                </div> 
-            </div>
-            <!--<button class="btn btn-secondary color_18" id="upload-button" > </button>-->
-            <input type="file" id="input-file" accept="image/jpg" style="display: none">
-            <p style="margin-top: 10px">
-                <button  class="btn btn-secondary color_18" id="upload-button">Subir foto</button> 
-                <button  class="btn btn-secondary color_18" id="screenshot-button">Tomar foto</button> 
-                <button class="btn btn-secondary color_18" id="screenshot-stop-button">Cerrar</button></p>
-            <p></p>
-            <p></p>
-            <div id="nota" style="color:red;">
-                <p>
-                    <b><h4> Nota (subir fotos): </h4></b>    
-                </p>
-                <p>
-                    Tamaño máximo de la imagen 100 KB          
-                </p>
-                <p>
-                    Formato imagen .JPG           
-                </p>
-                <p>
-                    Resolucion 320x240 píxeles
-                </p>            
+    <div id='webcam'>
+        <!-- load camara -->
+    </div>
+    <section class="controls right">
+        <select style="display:none;" onchange="changeCamera()" size="1" id="cameraNames">
+            <!-- camaras -->
+        </select>
+        <div id="unicacamara" style="display:none;"></div>
+        <div>
+            <button id="capture_pic">Tomar Foto</button>
+            <button id="cerrarv_pic">Cerrar Camara</button>
+        </div>
+    </section>
+    <div id="visualiazador" style="z-index:1;display:none;">
+        <div class="picviewcontent">
+            <div class="left pic128 picpreview">
+                <img id="imgphoto128" src="" height="128px" width="128px" style="display:block;" />    
             </div>
 
+            <div class="left pic64 picpreview">
+                <img id="imgphoto64" src="" height="64px" width="64px" style="display:block;" />    
+            </div>
+
+            <div class="left pic32 picpreview">
+                <img id="imgphoto32" src="" height="32px" width="32px" style="display:block;" />    
+            </div>
+
+            <div class="left pic24 picpreview">
+                <img id="imgphoto24" src="" height="24px" width="24px" style="display:block;" />    
+            </div>
+        </div>
+
+        <div class="options_picpreview right">
+            <button id="aceptar_foto">Usar Esta Foto</button>
+            <button id="capturar_nueva_foto">Tomar Otra Foto</button>
+            <button id="cerrar_foto_camara">Cerrar Camara</button>
         </div>
     </div>
-</div>
-<!-- -->
-
-<div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" class="modal hide fade" id="dlgPhoto" style="display: none;">
-
-<div class="box color_light">
-    <div class="modal-header">
-        <button type="button" aria-hidden="true" class="close" id="button-close">×</button>
-        <h4> <i class="icon-book"></i>
-            <span>Tomar Foto</span> 
-        </h4>
-    </div>
-    <div class="content" id="div-content">
-        <div class="container-fluid">
-            <div class="form-row control-group row-fluid">
-                <label class="control-label span2" for="normal-field">Camaras</label>
-                <div class="controls span4">
-                    <select style="width:245px;font-size:10px;height:25px;" onchange="changeCamera()" size="1" id="cameraNames">
-                    <option value="0">HP HD Webcam</option><option value="0">HP HD Webcam</option></select>
-                </div>
-            </div>
-            <div class="form-row control-group row-fluid">
-                <div style="width:100%; height: 100%" id="webcam"></div> 
-            </div>
-            <!--<button class="btn btn-secondary color_18" id="upload-button" > </button>-->
-            <input type="file" style="display: none" accept="image/jpg" id="input-file">
-            <p style="margin-top: 10px">
-                <button id="upload-button" class="btn btn-secondary color_18">Subir foto</button> 
-                <button id="screenshot-button" class="btn btn-secondary color_18">Tomar foto</button> 
-                <button id="screenshot-stop-button" class="btn btn-secondary color_18">Cerrar</button></p>
-            <p></p>
-            <p></p>
-            <div style="color:red;" id="nota">
-                <p>
-                    <b></b></p><h4><b> Nota (subir fotos): </b></h4>    
-                <p></p>
-                <p>
-                    Tamaño máximo de la imagen 100 KB          
-                </p>
-                <p>
-                    Formato imagen .JPG           
-                </p>
-                <p>
-                    Resolucion 320x240 píxeles
-                </p>            
-            </div>
-
-        </div>
-    </div>
-</div>
-
-
-
-</div>
-<!-- -->
-<div class="foto" id="divFoto">
-	<img width="120px" height="120px" src="" id="imgphoto">
-</div>
-<!-- -->
-
-
-
-
+    <!-- <div class="footer_f"></div> -->
+</section>
 
 <script type="text/javascript">
-	
 	var cameraApi = null;
+
+    function mostrarcapturas(){
+        $('#visualiazador').show(0);
+    }
+
 	$(document).ready(function() {
 
-		// iniciar Api
-		$("#webcam").webcam({
-            swffile: "<?=JS_LIB;?>/pluginscam/sAS3Cam.swf?v=" + Math.random(),
-            previewWidth: 320,
-            previewHeight: 240,
-            resolutionWidth: 320,
-            resolutionHeight: 240,
-            StageScaleMode: 'noScale',
-            StageAlign: 'TL',
-            noCameraFound: function() {
-                this.debug('error', 'Web camera is not available');
-            },
-            swfApiFail: function(e) {
-                this.debug('error', 'Internal camera plugin error');
-            },
-            cameraDisabled: function() {
-                this.debug('error', 'Please allow access to your camera');
-            },
-            debug: function(type, string) {
-                if (type === 'error') {
-                    //$(".webcam-error").html(string);
-                    // console.log(string);
-                }
-            },
-            cameraEnabled: function() {
-                cameraApi = this;
-                if (!cameraApi.isCameraEnabled) {
-                    cameraApi.isCameraEnabled = true;
-                    // return;
-                }
-                var cams = cameraApi.getCameraList();
-                //console.log(cams);
-                $.each(cams, function(index, text) {
-                    //console.log(text);
-                    $('#cameraNames').append($('<option></option>').val(index).html(text))
-                });
-                cameraApi.setCamera('0');
-
-                $("#cameraNames").change(function() {
-                    var success = cameraApi.setCamera($(this).val());
-                    if (!success) {
-                        cameraApi.debug('error', 'Unable to select camera');
-                    } else {
-                        cameraApi.debug('notice', 'Camera changed');
-                    }
-                });
-
-                $('#screenshot-button').click(function() {
-                    var result = cameraApi.save();
-                    if (result && result.length) {
-                        $('#imgphoto').attr('src', 'data:image/jpg;base64,' + result);
-                        $('#txt_imgphoto').val(result);
-                        closeModal();
-                        /* resume camera capture */
-                        //cameraApi.setCamera($("#cameraNames").val());
-                    } else {
-                        cameraApi.debug('error', 'Broken camera');
-                    }
-                });
-
-            }
+        // cerrar muestras
+        $('#capturar_nueva_foto').on('click',function(){
+            $('#visualiazador').fadeOut('slow',function(){
+                activarCamarayTomarFoto();
+            });
         });
 
+        activarCamarayTomarFoto();
+        
+        
 		// capturar
-		$('#screenshot-button').click(function() {
+		/*$('#screenshot-button').click(function() {
             var result = cameraApi.save();
             if (result && result.length) {
                 $('#imgphoto').attr('src', 'data:image/jpg;base64,' + result);
                 $('#txt_imgphoto').val(result);
                 closeModal();
-                /* resume camera capture */
+                //resume camera capture
                 //cameraApi.setCamera($("#cameraNames").val());
             } else {
                 cameraApi.debug('error', 'Broken camera');
             }
-        });
+        });*/
 
 		// acciones secundarias
-		$('#input-file').change(function() {
+		/*$('#input-file').change(function() {
             readImage(this);
         });
 
@@ -208,7 +252,7 @@
 
         $('#screenshot-stop-button, #button-close').on('click', function() {
             closeModal();
-        });
+        });*/
 
 	});
 
@@ -220,6 +264,96 @@
         // $('#dlgPhoto').modal('hide');
         if (cameraApi !== null)
             cameraApi.isCameraEnabled = false;
+    }
+
+    function activarCamarayTomarFoto(){
+        // iniciar Api
+        $("#webcam").webcam({
+            swffile: "<?=JS_LIB;?>/pluginscam/sAS3Cam.swf?v=" + Math.random(),
+            previewWidth: 220,
+            previewHeight: 220,
+            resolutionWidth: 220,
+            resolutionHeight: 220,
+            StageScaleMode: 'noScale',
+            StageAlign: 'TL',
+            noCameraFound: function() {
+                this.debug('error', 'No Encontramos ningun dispositivo de camara.');
+            },
+            swfApiFail: function(e) {
+                this.debug('error', 'Internal camera plugin error 2');
+            },
+            cameraDisabled: function() {
+                this.debug('error', 'Please allow access to your camera');
+            },
+            debug: function(type, string) {
+                if (type === 'error') {
+                    //$(".webcam-error").html(string);
+                    console.log(string);
+                }
+            },
+            cameraEnabled: function() {
+                cameraApi = this;
+                if (!cameraApi.isCameraEnabled) {
+                    cameraApi.isCameraEnabled = true;
+                }
+                var cams = cameraApi.getCameraList();
+                
+                if(cams.length > 1){
+                    $('#cameraNames').html('');
+                    $('#cameraNames').fadeIn(0);
+                    $.each(cams, function(index, text) {
+                        //console.log(text);
+                        $('#cameraNames').append($('<option></option>').val(index).html(text))
+                    });
+
+                    cameraApi.setCamera('0');
+
+                    $("#cameraNames").change(function() {
+                        var success = cameraApi.setCamera($(this).val());
+                        if (!success) {
+                            cameraApi.debug('error', 'Unable to select camera');
+                        } else {
+                            cameraApi.debug('notice', 'Camera changed');
+                        }
+                    });
+                }else if(cams.length == 1){
+                    console.log(cams);
+                    $('#unicacamara').fadeIn(0).text(cams);
+                }
+
+                $('#capture_pic').on('click',function() {
+                    var result = cameraApi.save();
+                    if (result && result.length) {
+                        mostrarcapturas();
+                        $('#imgphoto128').attr('src', 'data:image/jpg;base64,' + result).show('slow');
+                        $('#imgphoto64').attr('src', 'data:image/jpg;base64,' + result).show('slow');
+                        $('#imgphoto32').attr('src', 'data:image/jpg;base64,' + result).show('slow');
+                        $('#imgphoto24').attr('src', 'data:image/jpg;base64,' + result).show('slow');
+                        $('#txt_imgphoto').val(result);
+
+                        closeModal();
+                        /* resume camera capture */
+                        cameraApi.setCamera('0');
+                    } else {
+                        cameraApi.debug('error', 'Broken camera');
+                    }
+                });
+
+                // quedarse con esta img.
+                $('#aceptar_foto').on('click',function(){
+                    var result = $('#txt_imgphoto').val();
+                    $('#fotorecorte').attr('src','data:image/jpg;base64,' + result);
+                    $('#cerrarv_pic').trigger('click');
+                    $('#fotorecorte').fadeIn(0);
+                });
+
+                $('#cerrarv_pic,#cerrar_foto_camara').on('click',function(){
+                    closeModal();
+                    $('#fancy_wrap').fadeOut(500).delay(500).fadeOut(0,function(){ $('.panelfotoperfil').remove(); });
+                });
+
+            }
+        });
     }
 
     function readImage(input) {
@@ -247,7 +381,7 @@
                     return;
                 }
                 var value = e.target.result.replace("data:image/jpeg;base64,", "");
-                $('#imgphoto').attr("src", e.target.result);
+                $('#imgphoto128').attr("src", e.target.result);
                 $('#txt_imgphoto').val(value);
                 closeModal();
             };

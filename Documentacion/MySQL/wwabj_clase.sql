@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50532
 File Encoding         : 65001
 
-Date: 2014-04-29 00:07:50
+Date: 2014-05-05 04:34:08
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -353,17 +353,18 @@ CREATE TABLE `imagenesweb` (
   `idimagenesweb` int(11) NOT NULL AUTO_INCREMENT,
   `imagenesweb_url` varchar(200) DEFAULT NULL,
   `imagenesweb_estado` bit(1) DEFAULT b'1',
-  `size_height` int(11) DEFAULT NULL,
-  `size_width` int(11) DEFAULT NULL,
+  `size_height` varchar(50) DEFAULT NULL,
+  `size_width` varchar(50) DEFAULT NULL,
   `idtipo_objeto` int(11) DEFAULT NULL,
   PRIMARY KEY (`idimagenesweb`),
   KEY `fkimagenesweb_tipo_objeto1_idx` (`idtipo_objeto`),
   CONSTRAINT `fkimagenesweb_tipo_objeto1` FOREIGN KEY (`idtipo_objeto`) REFERENCES `tipo_objeto` (`idtipo_objeto`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of imagenesweb
 -- ----------------------------
+INSERT INTO `imagenesweb` VALUES ('1', 'banner1.jpg', '', 'auto', '100%', '2');
 
 -- ----------------------------
 -- Table structure for nivel
@@ -459,11 +460,15 @@ CREATE TABLE `slidertransicion` (
   PRIMARY KEY (`idSliderTransicion`),
   KEY `fkSliderTransicion_Colaboradores1_idx` (`idColaboradores`),
   CONSTRAINT `fkSliderTransicion_Colaboradores1` FOREIGN KEY (`idColaboradores`) REFERENCES `colaboradores` (`idColaboradores`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of slidertransicion
 -- ----------------------------
+INSERT INTO `slidertransicion` VALUES ('1', '2014-05-03 16:34:18', '2014-05-03 16:36:18', '2014-05-05 16:36:23', 'slider_1.png', 'texto html', '#enlace1', 'entrar', '', '0000-00-00 00:00:00', 'titulo uno', '#f4f4f4', '#ffffff', 'left', null, '5000', '\0');
+INSERT INTO `slidertransicion` VALUES ('2', '2014-05-03 16:34:18', '2014-05-03 16:36:18', '2014-05-05 16:36:23', 'slider_2.png', 'texto html 2', '#enlace2', 'entrar', '', null, 'titulo dos', '#f4f4f4', '#ffffff', 'left', null, '5000', '');
+INSERT INTO `slidertransicion` VALUES ('3', '2014-05-03 16:34:18', '2014-05-03 16:36:18', '2014-05-05 16:36:23', 'slider_3.png', 'texto html 3', '#enlace3', 'entrar', '', null, 'titulo tres', '#f4f4f4', '#ffffff', 'left', null, '5000', '');
+INSERT INTO `slidertransicion` VALUES ('4', '2014-05-03 16:34:18', '2014-05-03 16:47:49', '2014-05-04 10:38:01', 'slider_4.png', 'texto html 4', '#enlace4', 'entrar', '', null, 'titulo cuatro', '#f4f4f4', '#ffffff', 'left', null, '5000', '');
 
 -- ----------------------------
 -- Table structure for supervisor
@@ -921,6 +926,67 @@ BEGIN
 		ORDER BY dv.Devocional_fechaPresentacion DESC LIMIT 1;
 	END IF;
 	
+END
+;;
+DELIMITER ;
+
+-- ----------------------------
+-- Procedure structure for SP_ftw_ImagenWebTipo
+-- ----------------------------
+DROP PROCEDURE IF EXISTS `SP_ftw_ImagenWebTipo`;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `SP_ftw_ImagenWebTipo`(IN xImagenWebId VARCHAR(11))
+BEGIN
+	#SP_ftw_ImagenWebTipo	
+	SELECT
+		imgw.idimagenesweb,
+		imgw.imagenesweb_url,
+		imgw.size_height,
+		imgw.size_width,
+		imgw.idtipo_objeto
+	FROM
+		imagenesweb imgw
+		LEFT JOIN tipo_objeto tipoo ON tipoo.idtipo_objeto = imgw.idtipo_objeto
+	WHERE 
+		tipoo.tipo_objeto_codigo = xImagenWebId AND 
+		imgw.imagenesweb_estado = 1
+	;
+END
+;;
+DELIMITER ;
+
+-- ----------------------------
+-- Procedure structure for SP_sld_Sliders
+-- ----------------------------
+DROP PROCEDURE IF EXISTS `SP_sld_Sliders`;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `SP_sld_Sliders`()
+BEGIN
+	# SP_sld_Sliders
+	SELECT
+		sld.idSliderTransicion,
+		sld.SliderTransicion_fechaCreacion,
+		sld.SliderTransicion_fechaAparicion,
+		sld.SliderTransicion_fechaDestruccion,
+		sld.SliderTransicion_ImagenURL,
+		sld.SliderTransicion_TextoHTML,
+		sld.SliderTransicion_enlaceButton,
+		sld.SliderTransicion_TextodelBoton,
+		sld.SliderTransicion_estado,
+		sld.SliderTransicion_fechaEliminacion,
+		sld.SliderTransicionTitle,
+		sld.SliderTransicionTitleColor,
+		sld.SliderTransicionTextColor,
+		sld.SliderTransicionInfoDirection,
+		sld.idColaboradores,
+		sld.SliderTransicionTime,
+		sld.SliderButtonOnOff
+	FROM
+	slidertransicion AS sld
+	WHERE 
+	NOW() BETWEEN sld.SliderTransicion_fechaAparicion AND sld.SliderTransicion_fechaDestruccion 
+	AND sld.SliderTransicion_estado = 1;
+
 END
 ;;
 DELIMITER ;

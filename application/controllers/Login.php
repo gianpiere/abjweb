@@ -330,8 +330,10 @@ class Login extends MY_Controller{
     }
 
     public function PasoDos(){
-            $this->css = array('pasodos.css');
-            $this->js  = array('pasodos.js');
+            $this->css      = array('pasodos.css');
+            $this->js       = array('pasodos.js');
+            $this->js_lib   = array('pluginscam/jquery.webcam.as3.js');
+
             $name = $this->session->userdata('UsuarioNombre');
             $this->descripcion  = 'Ingresa algunos datos personales';
             $this->email        = $this->session->userdata('UsuarioEmail');

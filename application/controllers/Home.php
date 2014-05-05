@@ -47,8 +47,27 @@ class Home extends MY_Controller{
         $this->load->model('m_fotos');
         $imagenHome = $this->m_fotos->SP_ftw_ImagenWebTipo('COD00000002');
         if(isset($imagenHome) && !empty($imagenHome)):
-            $this->imagenHome = $imagenHome;
-            echo json_encode($imagenHome);
+            $this->imagenPortada = $imagenHome;
+        endif;
+
+        $this->load->model('m_Slider');
+        $result_sliders = $this->m_Slider->SQL_sld_Sliders();
+        if(!empty($result_sliders) && is_array($result_sliders)):
+            $sliders = [];
+            foreach ($result_sliders as $sld => $slider) {
+                $slide = 
+                    array(
+                        'title'         => $slider[10],
+                        'img'           => SLIDER.$slider[4],
+                        'description'   => $slider[5],
+                        'button'        => array($slider[7],$slider[6],$slider[16]),
+                        'options'       => array('textdirection' => $slider[13], 'titlecolor' => $slider[11], 'textcolor' => $slider[12])
+                    );
+
+                $sliders[] = $slide;
+            }
+
+            $this->sliders = json_encode($sliders);
         endif;
 
         $this->focus = 'home';

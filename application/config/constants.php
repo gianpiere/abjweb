@@ -50,6 +50,9 @@ define('IMG', BASE_PATH.'statics/img/');
 define('GALERIA', BASE_PATH.'statics/galerias/');
 define('SLIDER', BASE_PATH.'statics/galerias/slider/');
 define('UPLOAD',BASE_PATH.'statics/upload/');
+define('IMGPORTADA',BASE_PATH.'statics/galerias/portada/');
+define('ICONOS',BASE_PATH.'statics/img/icons/');
+define('FONDOS',BASE_PATH.'statics/img/fondo/');
 
 # Caracteres especiales
 define("LATIN1_UC_CHARS", "ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝ");
